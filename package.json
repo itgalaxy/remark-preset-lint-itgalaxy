@@ -1,0 +1,72 @@
+{
+    "name": "remark-preset-lint-itgalaxy",
+    "version": "1.0.0",
+    "description": "itgalaxy org's remark-lint rules",
+    "keywords": [
+        "remark",
+        "remark-lint",
+        "preset",
+        "markdown",
+        "md",
+        "lint",
+        "itgalaxy",
+        "styleguide"
+    ],
+    "author": "Itgalaxy",
+    "license": "MIT",
+        "repository": {
+        "type": "git",
+        "url": "https://github.com/itgalaxy/remark-lint-config-itgalaxy.git"
+    },
+    "homepage": "https://github.com/itgalaxy/remark-lint-config-itgalaxy",
+    "bugs": "https://github.com/itgalaxy/remark-lint-config-itgalaxy/issues",
+    "main": "index.js",
+    "files": [
+        "index.js"
+    ],
+    "dependencies": {},
+    "devDependencies": {
+        "ava": "^0.16.0",
+        "eslint": "^3.0.0",
+        "eslint-plugin-ava": "^3.0.0",
+        "eslint-plugin-import": "^1.0.0",
+        "eslint-plugin-itgalaxy": "^11.0.0",
+        "eslint-plugin-jsx-a11y": "^2.0.0",
+        "eslint-plugin-lodash": "^1.0.0",
+        "eslint-plugin-node": "^2.0.0",
+        "eslint-plugin-promise": "^2.0.0",
+        "eslint-plugin-react": "^6.0.0",
+        "eslint-plugin-xo": "^0.5.0",
+        "npmpub": "^3.1.0",
+        "npm-run-all": "^3.0.0",
+        "remark": "^6.0.0",
+        "remark-cli": "^2.0.0",
+        "remark-lint": "^5.0.0"
+    },
+    "peerDependencies": {
+        "remark-lint": "^5.0.0"
+    },
+    "scripts": {
+        "lint:eslint": "eslint . --ignore-path .gitignore  --color",
+        "manual:lint:remark": "remark '{**/*,*}.md' --ignore-path .gitignore --frail --quiet",
+        "lint": "npm-run-all -l -p lint:**",
+
+        "ava": "ava --verbose \"__tests__/**/*.js\"",
+
+        "pretest": "npm run lint",
+        "test": "npm run ava",
+
+        "release": "npmpub"
+    },
+    "eslintConfig": {
+        "rules": {
+            "strict": "off"
+        },
+        "extends": [
+            "plugin:itgalaxy/ava",
+            "plugin:itgalaxy/es5",
+            "plugin:itgalaxy/node"
+        ],
+        "root": true
+    }
+}
