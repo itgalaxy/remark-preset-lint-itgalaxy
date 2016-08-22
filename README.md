@@ -22,7 +22,23 @@ $ npm install remark-preset-lint-itgalaxy --save-dev
 
 ## Usage
 
-Coming soon
+Add preset to `package.json`:
+
+```json
+{
+    "remarkConfig": {
+        "presets": [
+            "remark-preset-lint-itgalaxy"
+        ]
+    }
+}
+```
+
+Run lint:
+
+```shell
+remark .
+```
 
 ## [Changelog](CHANGELOG.md)
 
