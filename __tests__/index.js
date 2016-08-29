@@ -32,7 +32,7 @@ test('should have no error on valid syntax', function (t) {
             .use(lint)
             .process(validMarkdown, (error, file) => {
                 if (error) {
-                    reject(error);
+                    return reject(error);
                 }
 
                 return resolve(file);
