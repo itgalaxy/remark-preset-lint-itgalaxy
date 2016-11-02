@@ -2,6 +2,9 @@ var config = require('../index');
 var test = require('ava');
 var remark = require('remark');
 var lint = require('remark-lint');
+var globby = require('globby');
+var path = require('path');
+var fs = require('fs');
 
 function isObject(obj) {
     return typeof obj === 'object' && obj !== null;
@@ -24,25 +27,38 @@ test('should have property `settings`', function (t) {
 });
 
 test('should have no error on valid syntax', function (t) {
-    var validMarkdown = [
-        '> Hello\n'
-    ].join('\n');
-    var runRemark = new Promise((resolve, reject) => {
-        remark()
-            .use(lint)
-            .process(validMarkdown, (error, file) => {
-                if (error) {
-                    return reject(error);
-                }
+    t.plan(2);
 
-                return resolve(file);
-            });
-    });
+    return globby(['fixtures/**/*.md'], {
+        cwd: path.dirname(__filename)
+    })
+        .then((filePaths) => {
+            return Promise.all(filePaths.map(function (filePath) {
+                return new Promise(function (resolve, reject) {
+                    return fs.readFile(filePath, function (error, contents) {
+                        if (error) {
+                            return reject(error);
+                        }
 
-    t.plan(1);
+                        return resolve(contents);
+                    });
+                })
+                    .then(function (contents) {
+                        return new Promise((resolve, reject) => {
+                            return remark()
+                                .use(lint, config.plugins.lint)
+                                .process(contents.toString(), (error, file) => {
+                                    if (error) {
+                                        return reject(error);
+                                    }
 
-    return runRemark
-        .then((file) => {
-            t.true(file.messages.length === 0, 'no errors');
+                                    return resolve(file);
+                                });
+                        })
+                            .then(function (file) {
+                                t.true(file.messages.length === 0, `no lint error in ${filePath}`);
+                            });
+                    });
+            }));
         });
 });

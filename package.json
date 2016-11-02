@@ -1,6 +1,6 @@
 {
     "name": "remark-preset-lint-itgalaxy",
-    "version": "2.0.0",
+    "version": "3.0.0",
     "description": "itgalaxy org's remark-lint rules",
     "keywords": [
         "remark",
@@ -26,29 +26,33 @@
     ],
     "dependencies": {},
     "devDependencies": {
+        "ajv-cli": "^1.1.0",
         "ava": "^0.16.0",
-        "eslint": "^3.7.0",
+        "eslint": "^3.9.1",
         "eslint-plugin-ava": "^3.1.0",
         "eslint-plugin-import": "^2.0.0",
-        "eslint-plugin-itgalaxy": "^21.0.0",
+        "eslint-plugin-itgalaxy": "^24.0.0",
         "eslint-plugin-jsx-a11y": "^2.2.0",
-        "eslint-plugin-lodash": "^1.10.0",
-        "eslint-plugin-node": "^2.1.0",
-        "eslint-plugin-promise": "^2.0.0",
-        "eslint-plugin-react": "^6.3.0",
+        "eslint-plugin-lodash": "^2.1.0",
+        "eslint-plugin-node": "^3.0.0",
+        "eslint-plugin-promise": "^3.3.0",
+        "eslint-plugin-react": "^6.4.0",
         "eslint-plugin-unicorn": "^1.0.0",
+        "globby": "^6.0.0",
         "npmpub": "^3.1.0",
         "npm-run-all": "^3.0.0",
         "remark": "^6.0.0",
         "remark-cli": "^2.0.0",
-        "remark-lint": "^5.1.0"
+        "remark-lint": "^5.2.0",
+        "package-schema": "^1.0.0"
     },
     "peerDependencies": {
-        "remark-lint": "^5.1.0"
+        "remark-lint": "^5.2.0"
     },
     "scripts": {
+        "lint:package": "ajv -s ./node_modules/package-schema/schema.json -d package --errors=text",
         "lint:eslint": "eslint . --ignore-path .gitignore  --color",
-        "manual:lint:remark": "remark '{**/*,*}.md' --ignore-path .gitignore --frail --quiet",
+        "lint:remark": "remark '{**/*,*}.md' --ignore-path .gitignore --frail --quiet",
         "lint": "npm-run-all -l -p lint:**",
 
         "ava": "ava --verbose \"__tests__/**/*.js\"",
