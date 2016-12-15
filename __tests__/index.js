@@ -30,6 +30,7 @@ test('should have no error on valid syntax', function (t) {
     t.plan(2);
 
     return globby(['fixtures/**/*.md'], {
+        absolute: true,
         cwd: path.dirname(__filename)
     })
         .then((filePaths) => {
