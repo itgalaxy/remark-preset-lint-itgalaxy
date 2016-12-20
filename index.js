@@ -39,6 +39,7 @@ module.exports = {
             'no-duplicate-headings': false,
             'no-duplicate-headings-in-section': true,
             'no-emphasis-as-heading': true,
+            'no-empty-url': true,
             'no-file-name-articles': true,
             'no-file-name-consecutive-dashes': true,
             'no-file-name-irregular-characters': true,
