@@ -47,6 +47,7 @@ module.exports = {
             'no-file-name-outer-dashes': true,
             'no-heading-content-indent': true,
             'no-heading-indent': true,
+            'no-heading-like-paragraph': false,
             'no-heading-punctuation': '.,;:!?',
             'no-html': true,
             'no-inline-padding': true,

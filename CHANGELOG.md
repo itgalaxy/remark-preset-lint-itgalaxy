@@ -7,6 +7,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 # Head
 
 - Added: `no-empty-url` rule.
+- Chore: added `no-heading-like-paragraph` rule for tracking.
 
 # 3.0.0 - 2016-11-2
 
