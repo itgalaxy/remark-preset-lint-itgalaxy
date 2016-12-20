@@ -4,12 +4,12 @@ All notable changes to this project will be documented in this file.
 
 This project adheres to [Semantic Versioning](http://semver.org/).
 
-# Head
+# 4.0.0 - 2016-12-20
 
-- Added: `no-empty-url` rule.
+- Added **(Major update)**: `no-empty-url` rule.
 - Chore: added `no-heading-like-paragraph` rule for tracking.
 
-# 3.0.0 - 2016-11-2
+# 3.0.0 - 2016-11-02
 
 - Added **(Major update)**: `no-duplicate-headings-in-section` rule.
 - Added **(Major update)**: `no-reference-like-url` rule.

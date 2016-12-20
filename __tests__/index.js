@@ -1,10 +1,12 @@
-var config = require('../index');
-var test = require('ava');
-var remark = require('remark');
-var lint = require('remark-lint');
-var globby = require('globby');
-var path = require('path');
-var fs = require('fs');
+/* eslint quotes: ["error", "single"] */
+
+const config = require('../index');
+const test = require('ava');
+const remark = require('remark');
+const lint = require('remark-lint');
+const globby = require('globby');
+const path = require('path');
+const fs = require('fs');
 
 function isObject(obj) {
     return typeof obj === 'object' && obj !== null;

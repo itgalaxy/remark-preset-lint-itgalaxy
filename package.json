@@ -1,7 +1,7 @@
 {
     "name": "remark-preset-lint-itgalaxy",
-    "version": "3.0.0",
-    "description": "itgalaxy org's remark-lint rules",
+    "version": "4.0.0",
+    "description": "Itgalaxy org's remark-lint rules",
     "keywords": [
         "remark",
         "remark-lint",
@@ -64,6 +64,10 @@
     },
     "eslintConfig": {
         "rules": {
+            "quotes": [
+                "error",
+                "double"
+            ],
             "strict": "off"
         },
         "extends": [
