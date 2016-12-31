@@ -40,7 +40,7 @@
         "eslint-plugin-unicorn": "^1.0.0",
         "globby": "^6.0.0",
         "npmpub": "^3.1.0",
-        "npm-run-all": "^3.0.0",
+        "npm-run-all": "^4.0.0",
         "remark": "^6.0.0",
         "remark-cli": "^2.0.0",
         "remark-lint": "^5.2.0",
