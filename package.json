@@ -52,7 +52,7 @@
     "scripts": {
         "lint:package": "ajv -s ./node_modules/package-schema/schema.json -d package --errors=text",
         "lint:eslint": "eslint . --ignore-path .gitignore  --color",
-        "lint:remark": "remark '{**/*,*}.md' --ignore-path .gitignore --frail --quiet",
+        "lint:remark": "remark . --ignore-path .gitignore --frail --quiet",
         "lint": "npm-run-all -l -p lint:**",
 
         "ava": "ava --verbose \"__tests__/**/*.js\"",
@@ -76,5 +76,10 @@
             "plugin:itgalaxy/node"
         ],
         "root": true
+    },
+    "remarkConfig": {
+        "plugins": [
+            "./index.js"
+        ]
     }
 }
