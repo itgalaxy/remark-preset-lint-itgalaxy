@@ -12,43 +12,43 @@ function isObject(obj) {
     return typeof obj === 'object' && obj !== null;
 }
 
-test('should have property `plugin`', function (t) {
+test('should have property `plugin`', (t) => {
     t.true(isObject(config.plugins), 'plugin is object');
 });
 
-test('should have property `lint` in `plugin` property', function (t) {
+test('should have property `lint` in `plugin` property', (t) => {
     t.true(isObject(config.plugins.lint), 'lint is object');
 });
 
-test('should have rules in property `lint` in `plugin` property', function (t) {
+test('should have rules in property `lint` in `plugin` property', (t) => {
     t.true(Object.keys(config.plugins.lint).length > 0, 'exist rules');
 });
 
-test('should have property `settings`', function (t) {
+test('should have property `settings`', (t) => {
     t.true(isObject(config.settings), 'settings is object');
 });
 
-test('should have no error on valid syntax', function (t) {
+test('should have no error on valid syntax', (t) => {
     t.plan(2);
 
     return globby(['fixtures/**/*.md'], {
         absolute: true,
         cwd: path.dirname(__filename)
     })
-        .then((filePaths) => {
-            return Promise.all(filePaths.map(function (filePath) {
-                return new Promise(function (resolve, reject) {
-                    return fs.readFile(filePath, function (error, contents) {
+        .then(
+            (filePaths) => Promise.all(filePaths.map(
+                (filePath) => new Promise(
+                    (resolve, reject) => fs.readFile(filePath, (error, contents) => {
                         if (error) {
                             return reject(error);
                         }
 
                         return resolve(contents);
-                    });
-                })
-                    .then(function (contents) {
-                        return new Promise((resolve, reject) => {
-                            return remark()
+                    })
+                )
+                    .then(
+                        (contents) => new Promise(
+                            (resolve, reject) => remark()
                                 .use(lint, config.plugins.lint)
                                 .process(contents.toString(), (error, file) => {
                                     if (error) {
@@ -56,12 +56,14 @@ test('should have no error on valid syntax', function (t) {
                                     }
 
                                     return resolve(file);
-                                });
-                        })
-                            .then(function (file) {
+                                })
+                        )
+                            .then((file) => {
                                 t.true(file.messages.length === 0, `no lint error in ${filePath}`);
-                            });
-                    });
-            }));
-        });
+
+                                return true;
+                            })
+                    )
+            ))
+        );
 });
