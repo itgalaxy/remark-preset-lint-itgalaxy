@@ -1,7 +1,7 @@
 {
     "name": "remark-preset-lint-itgalaxy",
-    "version": "4.0.0",
-    "description": "Itgalaxy org's remark-lint rules",
+    "version": "5.0.0",
+    "description": "Itgalaxy org's remark lint rules",
     "keywords": [
         "remark",
         "remark-lint",

@@ -4,7 +4,7 @@ All notable changes to this project will be documented in this file.
 
 This project adheres to [Semantic Versioning](http://semver.org/).
 
-# Head
+# 5.0.0 - 2017-02-24
 
 - Chore **(Major update)**: minimum required `remark-lint` version is now `^6.0.0`.
 
