@@ -3,7 +3,6 @@
 const config = require('../index');
 const test = require('ava');
 const remark = require('remark');
-const lint = require('remark-lint');
 const globby = require('globby');
 const path = require('path');
 const fs = require('fs');
@@ -16,12 +15,8 @@ test('should have property `plugin`', (t) => {
     t.true(isObject(config.plugins), 'plugin is object');
 });
 
-test('should have property `lint` in `plugin` property', (t) => {
-    t.true(isObject(config.plugins.lint), 'lint is object');
-});
-
 test('should have rules in property `lint` in `plugin` property', (t) => {
-    t.true(Object.keys(config.plugins.lint).length > 0, 'exist rules');
+    t.true(Object.keys(config.plugins).length > 0, 'exist rules');
 });
 
 test('should have property `settings`', (t) => {
@@ -49,7 +44,7 @@ test('should have no error on valid syntax', (t) => {
                     .then(
                         (contents) => new Promise(
                             (resolve, reject) => remark()
-                                .use(lint, config.plugins.lint)
+                                .use(config.plugins)
                                 .process(contents.toString(), (error, file) => {
                                     if (error) {
                                         return reject(error);
