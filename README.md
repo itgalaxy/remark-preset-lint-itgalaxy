@@ -4,7 +4,6 @@
 [![Travis Build Status](https://img.shields.io/travis/itgalaxy/remark-preset-lint-itgalaxy/master.svg?label=build)](https://travis-ci.org/itgalaxy/remark-preset-lint-itgalaxy) 
 [![dependencies Status](https://david-dm.org/itgalaxy/remark-preset-lint-itgalaxy/status.svg)](https://david-dm.org/itgalaxy/remark-preset-lint-itgalaxy)
 [![devDependencies Status](https://david-dm.org/itgalaxy/remark-preset-lint-itgalaxy/dev-status.svg)](https://david-dm.org/itgalaxy/remark-preset-lint-itgalaxy?type=dev)
-[![peerDependencies Status](https://david-dm.org/itgalaxy/remark-preset-lint-itgalaxy/peer-status.svg)](https://david-dm.org/itgalaxy/remark-preset-lint-itgalaxy?type=peer)
 
 Itgalaxy’s remark sharable preset for linting markdown.
 
