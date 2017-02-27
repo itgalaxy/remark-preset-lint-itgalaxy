@@ -5,7 +5,6 @@
 module.exports = {
     plugins: [
         require('remark-lint'),
-        require('remark-comment-config'),
         [require('remark-lint-blockquote-indentation'), 2],
         [
             require('remark-lint-checkbox-character-style'),

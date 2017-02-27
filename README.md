@@ -21,7 +21,8 @@ Next, install `remark-preset-lint-itgalaxy`:
 $ npm install remark-preset-lint-itgalaxy --save-dev
 ```
 
-**Note:** If you installed Remark and RemarkLint globally (using the `-g` flag) then you must also install `remark-preset-lint-itgalaxy` globally.
+**Note:** If you installed Remark and RemarkLint globally (using the `-g` flag) 
+then you must also install `remark-preset-lint-itgalaxy` globally.
 
 ## Usage
 
