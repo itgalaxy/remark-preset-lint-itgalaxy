@@ -1,5 +1,7 @@
 # remark-preset-lint-itgalaxy
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/itgalaxy/remark-preset-lint-itgalaxy.svg)](https://greenkeeper.io/)
+
 [![NPM version](https://img.shields.io/npm/v/remark-preset-lint-itgalaxy.svg)](https://www.npmjs.org/package/remark-preset-lint-itgalaxy) 
 [![Travis Build Status](https://img.shields.io/travis/itgalaxy/remark-preset-lint-itgalaxy/master.svg?label=build)](https://travis-ci.org/itgalaxy/remark-preset-lint-itgalaxy) 
 [![dependencies Status](https://david-dm.org/itgalaxy/remark-preset-lint-itgalaxy/status.svg)](https://david-dm.org/itgalaxy/remark-preset-lint-itgalaxy)
