@@ -1,32 +1,30 @@
-/* eslint quotes: ["error", "single"] */
-
-const config = require('../index');
-const test = require('ava');
-const remark = require('remark');
-const globby = require('globby');
-const path = require('path');
-const fs = require('fs');
+const config = require("../index");
+const test = require("ava");
+const remark = require("remark");
+const globby = require("globby");
+const path = require("path");
+const fs = require("fs");
 
 function isObject(obj) {
-    return typeof obj === 'object' && obj !== null;
+    return typeof obj === "object" && obj !== null;
 }
 
-test('should have property `plugin`', t => {
-    t.true(isObject(config.plugins), 'plugin is object');
+test("should have property `plugin`", t => {
+    t.true(isObject(config.plugins), "plugin is object");
 });
 
-test('should have rules in property `lint` in `plugin` property', t => {
-    t.true(Object.keys(config.plugins).length > 0, 'exist rules');
+test("should have rules in property `lint` in `plugin` property", t => {
+    t.true(Object.keys(config.plugins).length > 0, "exist rules");
 });
 
-test('should have property `settings`', t => {
-    t.true(isObject(config.settings), 'settings is object');
+test("should have property `settings`", t => {
+    t.true(isObject(config.settings), "settings is object");
 });
 
-test('should have no error on valid syntax', t => {
+test("should have no error on valid syntax", t => {
     t.plan(2);
 
-    return globby(['fixtures/**/*.md'], {
+    return globby(["fixtures/**/*.md"], {
         absolute: true,
         cwd: path.dirname(__filename)
     }).then(filePaths =>
