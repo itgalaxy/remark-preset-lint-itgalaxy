@@ -4,6 +4,10 @@ All notable changes to this project will be documented in this file.
 
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+# Head
+
+-   Fixed: rename `remark-lint-no-blockquote-without-caret` to `remark-lint-no-blockquote-without-marker`.
+
 # 6.0.0 - 2017-03-11
 
 -   Changed: set option to `tab-size` for `list-item-indent` rule.

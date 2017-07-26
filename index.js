@@ -34,7 +34,7 @@ module.exports = {
         [require("remark-lint-maximum-heading-length"), 60],
         [require("remark-lint-maximum-line-length"), 120],
         require("remark-lint-no-auto-link-without-protocol"),
-        require("remark-lint-no-blockquote-without-caret"),
+        require("remark-lint-no-blockquote-without-marker"),
         require("remark-lint-no-consecutive-blank-lines"),
         require("remark-lint-no-duplicate-definitions"),
         require("remark-lint-no-duplicate-headings-in-section"),
@@ -52,6 +52,8 @@ module.exports = {
         require("remark-lint-no-inline-padding"),
         require("remark-lint-no-literal-urls"),
         require("remark-lint-no-missing-blank-lines"),
+        // Uncomment after resolve https://github.com/wooorm/remark-lint/issues/138
+        // require("remark-lint-no-paragraph-content-indent"),
         require("remark-lint-no-reference-like-url"),
         require("remark-lint-no-shell-dollars"),
         require("remark-lint-no-shortcut-reference-image"),
