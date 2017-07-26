@@ -14,10 +14,11 @@ module.exports = {
             }
         ],
         require("remark-lint-checkbox-content-indent"),
+        [require("remark-lint-code-block-style"), "fenced"],
         require("remark-lint-definition-case"),
         require("remark-lint-definition-spacing"),
         [require("remark-lint-emphasis-marker"), "*"],
-        require("remark-lint-fenced-code-flag"),
+        [require("remark-lint-fenced-code-flag"), { allowEmpty: false }],
         [require("remark-lint-fenced-code-marker"), "`"],
         [require("remark-lint-file-extension"), "md"],
         require("remark-lint-final-definition"),
