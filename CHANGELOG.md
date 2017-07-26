@@ -4,7 +4,7 @@ All notable changes to this project will be documented in this file.
 
 This project adheres to [Semantic Versioning](http://semver.org/).
 
-# Head
+# 7.0.0 - 2017-07-26
 
 -   Added **(Major update)**: `remark-lint-no-paragraph-content-indent` rule.
 -   Added **(Major update)**: `remark-lint-linebreak-style` rule.
