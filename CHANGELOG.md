@@ -7,8 +7,9 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 # Head
 
 -   Added **(Major update)**: `remark-lint-linebreak-style` rule.
--   Changed: set `"` value to `remark-lint-link-title-style` rule.
--   Fixed: rename `remark-lint-no-blockquote-without-caret` to `remark-lint-no-blockquote-without-marker`.
+-   Changed: use `---` horizontal rule for `remark-lint-rule-style` rule.
+-   Changed: use `"` quotes for `remark-lint-link-title-style` rule.
+-   Fixed: rename `remark-lint-no-blockquote-without-caret` rule to `remark-lint-no-blockquote-without-marker` rule.
 
 # 6.0.0 - 2017-03-11
 

@@ -65,7 +65,7 @@ module.exports = {
         require("remark-lint-no-unused-definitions"),
         [require("remark-lint-ordered-list-marker-style"), "."],
         [require("remark-lint-ordered-list-marker-value"), "ordered"],
-        [require("remark-lint-rule-style"), "_______"],
+        [require("remark-lint-rule-style"), "---"],
         [require("remark-lint-strong-marker"), "*"],
         [require("remark-lint-table-cell-padding"), "padded"],
         require("remark-lint-table-pipe-alignment"),
