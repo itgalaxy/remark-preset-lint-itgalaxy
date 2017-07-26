@@ -27,7 +27,7 @@ module.exports = {
         require("remark-lint-heading-increment"),
         [require("remark-lint-heading-style"), "atx"],
         [require("remark-lint-linebreak-style"), "unix"],
-        [require("remark-lint-link-title-style"), "'"],
+        [require("remark-lint-link-title-style"), '"'],
         require("remark-lint-list-item-bullet-indent"),
         require("remark-lint-list-item-content-indent"),
         [require("remark-lint-list-item-indent"), "tab-size"],
