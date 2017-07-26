@@ -34,6 +34,7 @@ module.exports = {
         [require("remark-lint-list-item-indent"), "tab-size"],
         require("remark-lint-list-item-spacing"),
         [require("remark-lint-maximum-heading-length"), 60],
+        // Change to `80` in next release
         [require("remark-lint-maximum-line-length"), 120],
         require("remark-lint-no-auto-link-without-protocol"),
         require("remark-lint-no-blockquote-without-marker"),
@@ -54,8 +55,7 @@ module.exports = {
         require("remark-lint-no-inline-padding"),
         require("remark-lint-no-literal-urls"),
         require("remark-lint-no-missing-blank-lines"),
-        // Uncomment after resolve https://github.com/wooorm/remark-lint/issues/138
-        // require("remark-lint-no-paragraph-content-indent"),
+        require("remark-lint-no-paragraph-content-indent"),
         require("remark-lint-no-reference-like-url"),
         require("remark-lint-no-shell-dollars"),
         require("remark-lint-no-shortcut-reference-image"),

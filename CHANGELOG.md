@@ -6,6 +6,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 # Head
 
+-   Added **(Major update)**: `remark-lint-no-paragraph-content-indent` rule.
 -   Added **(Major update)**: `remark-lint-linebreak-style` rule.
 -   Added **(Major update)**: `remark-lint-code-block-style` rule.
 -   Changed: use `allowEmpty: false` for `remark-lint-fenced-code-flag` rule.
