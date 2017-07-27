@@ -111,8 +111,8 @@
         "prettier": "^1.5.2"
     },
     "scripts": {
-        "lint:eslint": "eslint . --ignore-path .gitignore  --color",
-        "lint:remark": "remark . --ignore-path .gitignore --frail --quiet",
+        "lint:eslint": "eslint . --ignore-path .gitignore",
+        "lint:remark": "remark . -i .gitignore -f -q",
         "lint": "npm-run-all -l -p lint:**",
         "prettier": "eslint . --fix --ignore-path .gitignore",
         "ava": "ava --verbose \"__tests__/**/*.js\"",
