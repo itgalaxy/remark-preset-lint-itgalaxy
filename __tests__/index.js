@@ -21,10 +21,8 @@ test("should have property `settings`", t => {
     t.true(isObject(config.settings), "settings is object");
 });
 
-test("should have no error on valid syntax", t => {
-    t.plan(2);
-
-    return globby(["fixtures/**/*.md"], {
+test("should have no error on valid syntax", t =>
+    globby(["fixtures/**/*.md"], {
         absolute: true,
         cwd: path.dirname(__filename)
     }).then(filePaths =>
@@ -60,5 +58,4 @@ test("should have no error on valid syntax", t => {
                 )
             )
         )
-    );
-});
+    ));
