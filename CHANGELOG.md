@@ -4,6 +4,10 @@ All notable changes to this project will be documented in this file.
 
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+# Head
+
+-   Chore: minimum required `remark-lint-no-paragraph-content-indent` version is now `^1.0.2`.
+
 # 7.0.1 - 2017-07-27
 
 -   Chore: minimum required `remark-lint-no-paragraph-content-indent` version is now `^1.0.1`.
