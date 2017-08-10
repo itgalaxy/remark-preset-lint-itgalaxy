@@ -28,27 +28,27 @@ Insteria is a WordPress starter theme with a modern development workflow.
 -   Latest ES syntax for JavaScript. Automatically determine the Babel plugins and polyfills you need based
     on your supported environments [babel-preset-env](https://github.com/babel/babel-preset-env).
 
--   [Webpack](https://webpack.github.io/) for compiling assets, optimizing images,
+-   [Webpack](https://webpack.github.io) for compiling assets, optimizing images,
     and concatenating and minifying files.
 
--   [Browsersync](http://www.browsersync.io/) for synchronized browser testing.
+-   [Browsersync](http://www.browsersync.io) for synchronized browser testing.
 
--   CSS [Bootstrap 3](http://getbootstrap.com/) framework.
+-   CSS [Bootstrap 3](http://getbootstrap.com) framework.
 
--   [Font Awesome](http://fontawesome.io/).
+-   [Font Awesome](http://fontawesome.io).
 
 ## Requirements
 
--   [WordPress](https://wordpress.org/) >= 4.8.0 **(don't use older versions `WordPress`,
+-   [WordPress](https://wordpress.org) >= 4.8.0 **(don't use older versions `WordPress`,
     it's not stable and unsecurity)**
 
 -   [PHP](http://php.net/manual/en/install.php) >= 7.x.x
 
--   [Composer](https://getcomposer.org/download/) >= 1.x.x
+-   [Composer](https://getcomposer.org/download) >= 1.x.x
 
--   [Node.js](http://nodejs.org/) >= 6.11.x
+-   [Node.js](http://nodejs.org) >= 6.11.x
 
--   [npm](https://www.npmjs.com/) >= 3.x.x
+-   [npm](https://www.npmjs.com) >= 3.x.x
 
 ## Browser Support
 
@@ -164,7 +164,7 @@ Optional.
 -   Code Coverage Analysis.
 
     Before you can use the code coverage analysis features in PHPUnit,
-    you should read the [Xdebug](https://xdebug.org/) installation guide.
+    you should read the [Xdebug](https://xdebug.org) installation guide.
 
 1.  Run `mysql` as `root`.
 

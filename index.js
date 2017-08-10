@@ -69,7 +69,8 @@ module.exports = {
         [require("remark-lint-table-cell-padding"), "padded"],
         require("remark-lint-table-pipe-alignment"),
         require("remark-lint-table-pipes"),
-        [require("remark-lint-unordered-list-marker-style"), "-"]
+        [require("remark-lint-unordered-list-marker-style"), "-"],
+        [require("remark-lint-no-url-trailing-slash")]
     ],
     settings: {
         breaks: false,
