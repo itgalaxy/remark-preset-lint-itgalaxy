@@ -21,39 +21,39 @@ To get started, check out <https://getbootstrap.com>!
 
 ## Table of contents
 
--   [Quick start](#quick-start)
--   [Bugs and feature requests](#bugs-and-feature-requests)
--   [Documentation](#documentation)
--   [Contributing](#contributing)
--   [Community](#community)
--   [Versioning](#versioning)
--   [Creators](#creators)
--   [Copyright and license](#copyright-and-license)
+- [Quick start](#quick-start)
+- [Bugs and feature requests](#bugs-and-feature-requests)
+- [Documentation](#documentation)
+- [Contributing](#contributing)
+- [Community](#community)
+- [Versioning](#versioning)
+- [Creators](#creators)
+- [Copyright and license](#copyright-and-license)
 
 ## Quick start
 
 Several quick start options are available:
 
--   [Download the latest release.](https://github.com/twbs/bootstrap/archive/v4.0.0-alpha.5.zip)
+- [Download the latest release.](https://github.com/twbs/bootstrap/archive/v4.0.0-alpha.5.zip)
 
--   Clone the repo: `git clone https://github.com/twbs/bootstrap.git`
+- Clone the repo: `git clone https://github.com/twbs/bootstrap.git`
 
--   Install with [npm](https://www.npmjs.com): 
-    `npm install bootstrap@4.0.0-alpha.5`
+- Install with [npm](https://www.npmjs.com): 
+  `npm install bootstrap@4.0.0-alpha.5`
 
--   Install with [Meteor](https://www.meteor.com): 
-    `meteor add twbs:bootstrap@=4.0.0-alpha.5`
+- Install with [Meteor](https://www.meteor.com): 
+  `meteor add twbs:bootstrap@=4.0.0-alpha.5`
 
--   Install with [Composer](https://getcomposer.org): 
-    `composer require twbs/bootstrap`
+- Install with [Composer](https://getcomposer.org): 
+  `composer require twbs/bootstrap`
 
--   Install with [Bower](https://bower.io): 
-    `bower install bootstrap#v4.0.0-alpha.5`
+- Install with [Bower](https://bower.io): 
+  `bower install bootstrap#v4.0.0-alpha.5`
 
--   Install with [NuGet](https://www.nuget.org): 
-    CSS: `Install-Package bootstrap -Pre` 
-    Sass: `Install-Package bootstrap.sass -Pre` (`-Pre` is only 
-    required until Bootstrap v4 has a stable release).
+- Install with [NuGet](https://www.nuget.org): 
+  CSS: `Install-Package bootstrap -Pre` 
+  Sass: `Install-Package bootstrap.sass -Pre` (`-Pre` is only 
+  required until Bootstrap v4 has a stable release).
 
 Read the [Getting started page](https://getbootstrap.com/getting-started/) 
 for information on the framework contents, templates and examples, and more.
@@ -95,18 +95,18 @@ GitHub Pages at <https://getbootstrap.com>. The docs may also be run locally.
 
 ### Running documentation locally
 
-1.  Run through the 
-    [tooling setup](https://github.com/twbs/bootstrap/blob/v4-dev/docs/getting-started/build-tools.md#tooling-setup) 
-    to install Jekyll (the site builder) and other Ruby dependencies 
-    with `bundle install`.
+1. Run through the 
+   [tooling setup](https://github.com/twbs/bootstrap/blob/v4-dev/docs/getting-started/build-tools.md#tooling-setup) 
+   to install Jekyll (the site builder) and other Ruby dependencies 
+   with `bundle install`.
 
-2.  Run `grunt` (or a specific set of Grunt tasks) to rebuild distributed CSS 
-    and JavaScript files, as well as our docs assets.
+2. Run `grunt` (or a specific set of Grunt tasks) to rebuild distributed CSS 
+   and JavaScript files, as well as our docs assets.
 
-3.  From the root `/bootstrap` directory, run `bundle exec jekyll serve` in 
-    the command line.
+3. From the root `/bootstrap` directory, run `bundle exec jekyll serve` in 
+   the command line.
 
-4.  Open <http://localhost:9001> in your browser, and voilà.
+4. Open <http://localhost:9001> in your browser, and voilà.
 
 Learn more about using Jekyll by reading its [documentation](https://jekyllrb.com/docs/home/).
 
@@ -137,21 +137,21 @@ for easy use in common text editors. Read more and download plugins at <http://e
 Get updates on Bootstrap's development and chat with the project maintainers 
 and community members.
 
--   Follow [@getbootstrap on Twitter](https://twitter.com/getbootstrap).
+- Follow [@getbootstrap on Twitter](https://twitter.com/getbootstrap).
 
--   Read and subscribe to [The Official Bootstrap Blog](https://blog.getbootstrap.com).
+- Read and subscribe to [The Official Bootstrap Blog](https://blog.getbootstrap.com).
 
--   Join [the official Slack room](https://bootstrap-slack.herokuapp.com).
+- Join [the official Slack room](https://bootstrap-slack.herokuapp.com).
 
--   Chat with fellow Bootstrappers in IRC. On the `irc.freenode.net` server, 
-    in the `##bootstrap` channel.
+- Chat with fellow Bootstrappers in IRC. On the `irc.freenode.net` server, 
+  in the `##bootstrap` channel.
 
--   Implementation help may be found at Stack Overflow (tagged [`bootstrap-4`](https://stackoverflow.com/questions/tagged/bootstrap-4)).
+- Implementation help may be found at Stack Overflow (tagged [`bootstrap-4`](https://stackoverflow.com/questions/tagged/bootstrap-4)).
 
--   Developers should use the keyword `bootstrap` on packages which modify or 
-    add to the functionality of Bootstrap when distributing 
-    through [npm](https://www.npmjs.com/browse/keyword/bootstrap) 
-    or similar delivery mechanisms for maximum discoverability.
+- Developers should use the keyword `bootstrap` on packages which modify or 
+  add to the functionality of Bootstrap when distributing 
+  through [npm](https://www.npmjs.com/browse/keyword/bootstrap) 
+  or similar delivery mechanisms for maximum discoverability.
 
 ## Versioning
 
@@ -169,13 +169,13 @@ summaries of the most noteworthy changes made in each release.
 
 **Mark Otto**
 
--   <https://twitter.com/mdo>
--   <https://github.com/mdo>
+- <https://twitter.com/mdo>
+- <https://github.com/mdo>
 
 **Jacob Thornton**
 
--   <https://twitter.com/fat>
--   <https://github.com/fat>
+- <https://twitter.com/fat>
+- <https://github.com/fat>
 
 ## Copyright and license
 

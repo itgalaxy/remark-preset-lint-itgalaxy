@@ -37,8 +37,11 @@ test("should have no error on valid syntax", t =>
                         return resolve(contents);
                     })
                 ).then(contents =>
-                    new Promise((resolve, reject) =>
-                        remark()
+                    new Promise((resolve, reject) => {
+                        // Remove `remark-validate-links`, because it doesn't work not on CLI
+                        config.plugins.splice(3, 1);
+
+                        return remark()
                             .use(config.plugins)
                             .process(contents.toString(), (error, file) => {
                                 if (error) {
@@ -46,8 +49,8 @@ test("should have no error on valid syntax", t =>
                                 }
 
                                 return resolve(file);
-                            })
-                    ).then(file => {
+                            });
+                    }).then(file => {
                         t.true(
                             file.messages.length === 0,
                             `no lint error in ${filePath}`

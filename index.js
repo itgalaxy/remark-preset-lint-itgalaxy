@@ -3,6 +3,14 @@
 module.exports = {
     plugins: [
         require("remark-lint"),
+        require("remark-comment-config"),
+        [
+            require("remark-message-control"),
+            {
+                name: "lint"
+            }
+        ],
+        require("remark-validate-links"),
         [require("remark-lint-blockquote-indentation"), 2],
         [
             require("remark-lint-checkbox-character-style"),
@@ -16,7 +24,7 @@ module.exports = {
         require("remark-lint-definition-case"),
         require("remark-lint-definition-spacing"),
         [require("remark-lint-emphasis-marker"), "*"],
-        [require("remark-lint-fenced-code-flag"), { allowEmpty: false }],
+        require("remark-lint-fenced-code-flag"),
         [require("remark-lint-fenced-code-marker"), "`"],
         [require("remark-lint-file-extension"), "md"],
         require("remark-lint-final-definition"),
@@ -29,10 +37,10 @@ module.exports = {
         [require("remark-lint-link-title-style"), '"'],
         require("remark-lint-list-item-bullet-indent"),
         require("remark-lint-list-item-content-indent"),
-        [require("remark-lint-list-item-indent"), "tab-size"],
+        [require("remark-lint-list-item-indent"), "space"],
         require("remark-lint-list-item-spacing"),
-        [require("remark-lint-maximum-heading-length")],
-        [require("remark-lint-maximum-line-length"), 80],
+        require("remark-lint-maximum-heading-length"),
+        require("remark-lint-maximum-line-length"),
         require("remark-lint-no-auto-link-without-protocol"),
         require("remark-lint-no-blockquote-without-marker"),
         require("remark-lint-no-consecutive-blank-lines"),
@@ -47,11 +55,13 @@ module.exports = {
         require("remark-lint-no-file-name-outer-dashes"),
         require("remark-lint-no-heading-content-indent"),
         require("remark-lint-no-heading-indent"),
+        require("remark-lint-no-heading-like-paragraph"),
         require("remark-lint-no-heading-punctuation"),
         require("remark-lint-no-html"),
         require("remark-lint-no-inline-padding"),
         require("remark-lint-no-literal-urls"),
         require("remark-lint-no-missing-blank-lines"),
+        require("remark-lint-no-multiple-toplevel-headings"),
         require("remark-lint-no-paragraph-content-indent"),
         require("remark-lint-no-reference-like-url"),
         require("remark-lint-no-shell-dollars"),
@@ -69,7 +79,7 @@ module.exports = {
         require("remark-lint-table-pipe-alignment"),
         require("remark-lint-table-pipes"),
         [require("remark-lint-unordered-list-marker-style"), "-"],
-        [require("remark-lint-no-url-trailing-slash")]
+        require("remark-lint-no-url-trailing-slash")
     ],
     settings: {
         breaks: false,
@@ -81,9 +91,11 @@ module.exports = {
         fence: "`",
         fences: false,
         footnotes: false,
+        gfm: true,
         incrementListMarker: true,
         listItemIndent: "tab",
         looseTable: false,
+        paddedTable: true,
         pedantic: false,
         rule: "-",
         ruleRepetition: 3,
