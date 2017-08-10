@@ -32,8 +32,7 @@ module.exports = {
         [require("remark-lint-list-item-indent"), "tab-size"],
         require("remark-lint-list-item-spacing"),
         [require("remark-lint-maximum-heading-length")],
-        // Change to `80` in next release
-        [require("remark-lint-maximum-line-length"), 120],
+        [require("remark-lint-maximum-line-length"), 80],
         require("remark-lint-no-auto-link-without-protocol"),
         require("remark-lint-no-blockquote-without-marker"),
         require("remark-lint-no-consecutive-blank-lines"),
