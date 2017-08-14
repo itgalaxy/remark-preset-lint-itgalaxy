@@ -4,6 +4,11 @@ All notable changes to this project will be documented in this file.
 
 This project adheres to [Semantic Versioning](http://semver.org).
 
+## 9.0.0 - 2017-08-14
+
+- Changed: use `exceptTightLists: true` for `remark-lint-no-missing-blank-lines` rule.
+- Removed: `remark-lint-maximum-line-length` rule.
+
 ## 8.0.0 - 2017-08-10
 
 - Added: `remark-comment-config` plugin.

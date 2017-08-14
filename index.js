@@ -40,7 +40,6 @@ module.exports = {
         [require("remark-lint-list-item-indent"), "space"],
         require("remark-lint-list-item-spacing"),
         require("remark-lint-maximum-heading-length"),
-        require("remark-lint-maximum-line-length"),
         require("remark-lint-no-auto-link-without-protocol"),
         require("remark-lint-no-blockquote-without-marker"),
         require("remark-lint-no-consecutive-blank-lines"),
@@ -60,7 +59,10 @@ module.exports = {
         require("remark-lint-no-html"),
         require("remark-lint-no-inline-padding"),
         require("remark-lint-no-literal-urls"),
-        require("remark-lint-no-missing-blank-lines"),
+        [
+            require("remark-lint-no-missing-blank-lines"),
+            { exceptTightLists: true }
+        ],
         require("remark-lint-no-multiple-toplevel-headings"),
         require("remark-lint-no-paragraph-content-indent"),
         require("remark-lint-no-reference-like-url"),
