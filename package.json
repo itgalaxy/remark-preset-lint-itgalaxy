@@ -90,7 +90,7 @@
         "remark-lint-table-pipes": "^1.0.0",
         "remark-lint-unordered-list-marker-style": "^1.0.0",
         "remark-message-control": "^4.0.1",
-        "remark-validate-links": "^6.1.0"
+        "remark-validate-links": "^7.0.0"
     },
     "devDependencies": {
         "ava": "^0.21.0",
