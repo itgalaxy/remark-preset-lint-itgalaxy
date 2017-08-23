@@ -6,7 +6,7 @@ This project adheres to [Semantic Versioning](http://semver.org).
 
 ## Head
 
-- Chore: minimum required `remark-validate-links` version  is now `^7.0.0`.
+- Chore **(Major update)**: minimum required `remark-validate-links` version  is now `^7.0.0`.
 
 ## 9.0.0 - 2017-08-14
 
