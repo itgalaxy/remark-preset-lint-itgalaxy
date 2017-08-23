@@ -1,145 +1,167 @@
 {
-    "name": "remark-preset-lint-itgalaxy",
-    "version": "9.0.0",
-    "description": "Itgalaxy org's remark lint rules",
-    "keywords": [
-        "remark",
-        "remark-lint",
-        "preset",
-        "markdown",
-        "md",
-        "lint",
-        "itgalaxy",
-        "styleguide"
+  "name": "remark-preset-lint-itgalaxy",
+  "version": "9.0.0",
+  "description": "Itgalaxy org's remark lint rules",
+  "keywords": [
+    "remark",
+    "remark-lint",
+    "preset",
+    "markdown",
+    "md",
+    "lint",
+    "itgalaxy",
+    "styleguide"
+  ],
+  "author": "Itgalaxy",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/itgalaxy/remark-lint-config-itgalaxy.git"
+  },
+  "homepage": "https://github.com/itgalaxy/remark-lint-config-itgalaxy",
+  "bugs": "https://github.com/itgalaxy/remark-lint-config-itgalaxy/issues",
+  "main": "index.js",
+  "files": [
+    "index.js"
+  ],
+  "dependencies": {
+    "remark-comment-config": "^5.0.1",
+    "remark-lint": "^6.0.0",
+    "remark-lint-blockquote-indentation": "^1.0.0",
+    "remark-lint-checkbox-character-style": "^1.0.0",
+    "remark-lint-checkbox-content-indent": "^1.0.0",
+    "remark-lint-code-block-style": "^1.0.0",
+    "remark-lint-definition-case": "^1.0.0",
+    "remark-lint-definition-spacing": "^1.0.0",
+    "remark-lint-emphasis-marker": "^1.0.0",
+    "remark-lint-fenced-code-flag": "^1.0.0",
+    "remark-lint-fenced-code-marker": "^1.0.0",
+    "remark-lint-file-extension": "^1.0.0",
+    "remark-lint-final-definition": "^1.0.0",
+    "remark-lint-final-newline": "^1.0.0",
+    "remark-lint-first-heading-level": "^1.0.0",
+    "remark-lint-hard-break-spaces": "^1.0.0",
+    "remark-lint-heading-increment": "^1.0.0",
+    "remark-lint-heading-style": "^1.0.0",
+    "remark-lint-linebreak-style": "^1.0.0",
+    "remark-lint-link-title-style": "^1.0.0",
+    "remark-lint-list-item-bullet-indent": "^1.0.0",
+    "remark-lint-list-item-content-indent": "^1.0.0",
+    "remark-lint-list-item-indent": "^1.0.0",
+    "remark-lint-list-item-spacing": "^1.0.0",
+    "remark-lint-maximum-heading-length": "^1.0.0",
+    "remark-lint-no-auto-link-without-protocol": "^1.0.0",
+    "remark-lint-no-blockquote-without-marker": "^2.0.0",
+    "remark-lint-no-consecutive-blank-lines": "^1.0.0",
+    "remark-lint-no-duplicate-definitions": "^1.0.0",
+    "remark-lint-no-duplicate-headings-in-section": "^1.0.0",
+    "remark-lint-no-emphasis-as-heading": "^1.0.0",
+    "remark-lint-no-empty-url": "^1.0.0",
+    "remark-lint-no-file-name-articles": "^1.0.0",
+    "remark-lint-no-file-name-consecutive-dashes": "^1.0.0",
+    "remark-lint-no-file-name-irregular-characters": "^1.0.0",
+    "remark-lint-no-file-name-mixed-case": "^1.0.0",
+    "remark-lint-no-file-name-outer-dashes": "^1.0.0",
+    "remark-lint-no-heading-content-indent": "^1.0.0",
+    "remark-lint-no-heading-indent": "^1.0.0",
+    "remark-lint-no-heading-like-paragraph": "^1.0.0",
+    "remark-lint-no-heading-punctuation": "^1.0.0",
+    "remark-lint-no-html": "^1.0.0",
+    "remark-lint-no-inline-padding": "^1.0.0",
+    "remark-lint-no-literal-urls": "^1.0.0",
+    "remark-lint-no-missing-blank-lines": "^1.0.0",
+    "remark-lint-no-multiple-toplevel-headings": "^1.0.0",
+    "remark-lint-no-paragraph-content-indent": "^1.0.2",
+    "remark-lint-no-reference-like-url": "^1.0.0",
+    "remark-lint-no-shell-dollars": "^1.0.0",
+    "remark-lint-no-shortcut-reference-image": "^1.0.0",
+    "remark-lint-no-shortcut-reference-link": "^1.0.0",
+    "remark-lint-no-table-indentation": "^1.0.0",
+    "remark-lint-no-tabs": "^1.0.0",
+    "remark-lint-no-undefined-references": "^1.0.0",
+    "remark-lint-no-unused-definitions": "^1.0.0",
+    "remark-lint-no-url-trailing-slash": "^3.0.0",
+    "remark-lint-ordered-list-marker-style": "^1.0.0",
+    "remark-lint-ordered-list-marker-value": "^1.0.0",
+    "remark-lint-rule-style": "^1.0.0",
+    "remark-lint-strong-marker": "^1.0.0",
+    "remark-lint-table-cell-padding": "^1.0.0",
+    "remark-lint-table-pipe-alignment": "^1.0.0",
+    "remark-lint-table-pipes": "^1.0.0",
+    "remark-lint-unordered-list-marker-style": "^1.0.0",
+    "remark-message-control": "^4.0.1",
+    "remark-validate-links": "^7.0.0"
+  },
+  "devDependencies": {
+    "ava": "^0.22.0",
+    "eslint": "^4.1.1",
+    "eslint-plugin-ava": "^4.2.1",
+    "eslint-plugin-import": "^2.6.0",
+    "eslint-plugin-itgalaxy": "^52.0.0",
+    "eslint-plugin-jest": "^20.0.3",
+    "eslint-plugin-jsx-a11y": "^6.0.0",
+    "eslint-plugin-lodash": "^2.4.3",
+    "eslint-plugin-node": "^5.1.0",
+    "eslint-plugin-prettier": "^2.1.2",
+    "eslint-plugin-promise": "^3.5.0",
+    "eslint-plugin-react": "^7.1.0",
+    "eslint-plugin-unicorn": "^2.1.2",
+    "globby": "^6.0.0",
+    "npmpub": "^3.1.0",
+    "npm-run-all": "^4.0.0",
+    "remark": "^8.0.0",
+    "remark-cli": "^4.0.0",
+    "husky": "^0.14.0",
+    "lint-staged": "^4.0.0",
+    "prettier": "^1.5.2"
+  },
+  "scripts": {
+    "precommit": "lint-staged",
+    "lint:prettier": "prettier --list-different '__tests__/**/*.{js,jsx}' '*.js'",
+    "lint:remark": "remark . -i .gitignore -f -q",
+    "lint:eslint": "eslint . '.*.js' --ignore-path .gitignore --ext '.js,.jsx'",
+    "lint": "npm-run-all -l -p lint:**",
+    "fix:prettier": "prettier --write '{lib,__tests__}/**/*.{js,jsx}' '*.js'",
+    "fix:eslint": "eslint . '.*.js' --fix --ignore-path .gitignore --ext '.js,.jsx'",
+    "fix": "npm-run-all -l -p 'fix:**'",
+    "pretest": "npm run lint",
+    "test-only": "ava --verbose \"__tests__/**/*.js\"",
+    "test": "npm run test-only",
+    "release": "npmpub"
+  },
+  "remarkConfig": {
+    "plugins": [
+      "./index.js"
+    ]
+  },
+  "eslintConfig": {
+    "parserOptions": {
+      "sourceType": "script"
+    },
+    "rules": {
+      "sort-keys": "off"
+    },
+    "extends": [
+      "plugin:itgalaxy/ava",
+      "plugin:itgalaxy/esnext",
+      "plugin:itgalaxy/node"
     ],
-    "author": "Itgalaxy",
-    "license": "MIT",
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/itgalaxy/remark-lint-config-itgalaxy.git"
-    },
-    "homepage": "https://github.com/itgalaxy/remark-lint-config-itgalaxy",
-    "bugs": "https://github.com/itgalaxy/remark-lint-config-itgalaxy/issues",
-    "main": "index.js",
-    "files": [
-        "index.js"
-    ],
-    "dependencies": {
-        "remark-comment-config": "^5.0.1",
-        "remark-lint": "^6.0.0",
-        "remark-lint-blockquote-indentation": "^1.0.0",
-        "remark-lint-checkbox-character-style": "^1.0.0",
-        "remark-lint-checkbox-content-indent": "^1.0.0",
-        "remark-lint-code-block-style": "^1.0.0",
-        "remark-lint-definition-case": "^1.0.0",
-        "remark-lint-definition-spacing": "^1.0.0",
-        "remark-lint-emphasis-marker": "^1.0.0",
-        "remark-lint-fenced-code-flag": "^1.0.0",
-        "remark-lint-fenced-code-marker": "^1.0.0",
-        "remark-lint-file-extension": "^1.0.0",
-        "remark-lint-final-definition": "^1.0.0",
-        "remark-lint-final-newline": "^1.0.0",
-        "remark-lint-first-heading-level": "^1.0.0",
-        "remark-lint-hard-break-spaces": "^1.0.0",
-        "remark-lint-heading-increment": "^1.0.0",
-        "remark-lint-heading-style": "^1.0.0",
-        "remark-lint-linebreak-style": "^1.0.0",
-        "remark-lint-link-title-style": "^1.0.0",
-        "remark-lint-list-item-bullet-indent": "^1.0.0",
-        "remark-lint-list-item-content-indent": "^1.0.0",
-        "remark-lint-list-item-indent": "^1.0.0",
-        "remark-lint-list-item-spacing": "^1.0.0",
-        "remark-lint-maximum-heading-length": "^1.0.0",
-        "remark-lint-no-auto-link-without-protocol": "^1.0.0",
-        "remark-lint-no-blockquote-without-marker": "^2.0.0",
-        "remark-lint-no-consecutive-blank-lines": "^1.0.0",
-        "remark-lint-no-duplicate-definitions": "^1.0.0",
-        "remark-lint-no-duplicate-headings-in-section": "^1.0.0",
-        "remark-lint-no-emphasis-as-heading": "^1.0.0",
-        "remark-lint-no-empty-url": "^1.0.0",
-        "remark-lint-no-file-name-articles": "^1.0.0",
-        "remark-lint-no-file-name-consecutive-dashes": "^1.0.0",
-        "remark-lint-no-file-name-irregular-characters": "^1.0.0",
-        "remark-lint-no-file-name-mixed-case": "^1.0.0",
-        "remark-lint-no-file-name-outer-dashes": "^1.0.0",
-        "remark-lint-no-heading-content-indent": "^1.0.0",
-        "remark-lint-no-heading-indent": "^1.0.0",
-        "remark-lint-no-heading-like-paragraph": "^1.0.0",
-        "remark-lint-no-heading-punctuation": "^1.0.0",
-        "remark-lint-no-html": "^1.0.0",
-        "remark-lint-no-inline-padding": "^1.0.0",
-        "remark-lint-no-literal-urls": "^1.0.0",
-        "remark-lint-no-missing-blank-lines": "^1.0.0",
-        "remark-lint-no-multiple-toplevel-headings": "^1.0.0",
-        "remark-lint-no-paragraph-content-indent": "^1.0.2",
-        "remark-lint-no-reference-like-url": "^1.0.0",
-        "remark-lint-no-shell-dollars": "^1.0.0",
-        "remark-lint-no-shortcut-reference-image": "^1.0.0",
-        "remark-lint-no-shortcut-reference-link": "^1.0.0",
-        "remark-lint-no-table-indentation": "^1.0.0",
-        "remark-lint-no-tabs": "^1.0.0",
-        "remark-lint-no-undefined-references": "^1.0.0",
-        "remark-lint-no-unused-definitions": "^1.0.0",
-        "remark-lint-no-url-trailing-slash": "^3.0.0",
-        "remark-lint-ordered-list-marker-style": "^1.0.0",
-        "remark-lint-ordered-list-marker-value": "^1.0.0",
-        "remark-lint-rule-style": "^1.0.0",
-        "remark-lint-strong-marker": "^1.0.0",
-        "remark-lint-table-cell-padding": "^1.0.0",
-        "remark-lint-table-pipe-alignment": "^1.0.0",
-        "remark-lint-table-pipes": "^1.0.0",
-        "remark-lint-unordered-list-marker-style": "^1.0.0",
-        "remark-message-control": "^4.0.1",
-        "remark-validate-links": "^6.1.0"
-    },
-    "devDependencies": {
-        "ava": "^0.21.0",
-        "eslint": "^4.1.1",
-        "eslint-plugin-ava": "^4.2.1",
-        "eslint-plugin-import": "^2.6.0",
-        "eslint-plugin-itgalaxy": "^50.0.0",
-        "eslint-plugin-jest": "^20.0.3",
-        "eslint-plugin-jsx-a11y": "^6.0.0",
-        "eslint-plugin-lodash": "^2.4.3",
-        "eslint-plugin-node": "^5.1.0",
-        "eslint-plugin-prettier": "^2.1.2",
-        "eslint-plugin-promise": "^3.5.0",
-        "eslint-plugin-react": "^7.1.0",
-        "eslint-plugin-unicorn": "^2.1.2",
-        "globby": "^6.0.0",
-        "npmpub": "^3.1.0",
-        "npm-run-all": "^4.0.0",
-        "remark": "^8.0.0",
-        "remark-cli": "^4.0.0",
-        "husky": "^0.14.0",
-        "lint-staged": "^4.0.0",
-        "prettier": "^1.5.2"
-    },
-    "scripts": {
-        "lint:eslint": "eslint . --ignore-path .gitignore",
-        "lint:remark": "remark . -i .gitignore -f -q",
-        "lint": "npm-run-all -l -p lint:**",
-        "prettier": "eslint . --fix --ignore-path .gitignore",
-        "pretest": "npm run lint",
-        "test-only": "ava --verbose \"__tests__/**/*.js\"",
-        "test": "npm run test-only",
-        "release": "npmpub"
-    },
-    "eslintConfig": {
-        "rules": {
-            "strict": "off",
-            "global-require": "off"
-        },
-        "extends": [
-            "plugin:itgalaxy/ava",
-            "plugin:itgalaxy/esnext",
-            "plugin:itgalaxy/node"
+    "overrides": [
+      {
+        "files": [
+          "**/__tests__/**/*.js"
         ],
-        "root": true
-    },
-    "remarkConfig": {
-        "plugins": [
-            "./index.js"
-        ]
-    }
+        "parserOptions": {
+          "sourceType": "module"
+        },
+        "rules": {
+          "node/no-unsupported-features": "off"
+        }
+      }
+    ],
+    "root": true
+  },
+  "engines": {
+    "node": ">= 4.3 < 5.0.0 || >= 5.10"
+  }
 }
