@@ -4,6 +4,10 @@ All notable changes to this project will be documented in this file.
 
 This project adheres to [Semantic Versioning](http://semver.org).
 
+## 11.0.0 - 2017-10-08
+
+- Added **(Major update)**: `remark-lint-no-trailing-spaces` rule.
+
 ## 10.0.0 - 2017-08-23
 
 - Chore **(Major update)**: minimum required `remark-validate-links` version  is now `^7.0.0`.

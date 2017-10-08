@@ -21,17 +21,17 @@ Insteria is a WordPress starter theme with a modern development workflow.
 
 ## Features
 
-- [Sass](http://sass-lang.com/documentation/file.SASS_REFERENCE.html) 
+- [Sass](http://sass-lang.com/documentation/file.SASS_REFERENCE.html)
   for stylesheets.
-  [Postcss-cssnext](https://github.com/MoOx/postcss-cssnext) 
+  [Postcss-cssnext](https://github.com/MoOx/postcss-cssnext)
   and [css-modules](https://github.com/css-modules/css-modules)
   are also supported for pure css in stylesheets.
 
-- Latest ES syntax for JavaScript. Automatically determine the Babel plugins 
-  and polyfills you need based on your supported environments 
+- Latest ES syntax for JavaScript. Automatically determine the Babel plugins
+  and polyfills you need based on your supported environments
   [babel-preset-env](https://github.com/babel/babel-preset-env).
 
-- [Webpack](https://webpack.github.io) for compiling assets, 
+- [Webpack](https://webpack.github.io) for compiling assets,
   optimizing images, and concatenating and minifying files.
 
 - [Browsersync](http://www.browsersync.io) for synchronized browser testing.
@@ -42,7 +42,7 @@ Insteria is a WordPress starter theme with a modern development workflow.
 
 ## Requirements
 
-- [WordPress](https://wordpress.org) >= 4.8.0 **(don't use older versions 
+- [WordPress](https://wordpress.org) >= 4.8.0 **(don't use older versions
   `WordPress`, it's not stable and unsecurity)**
 
 - [PHP](http://php.net/manual/en/install.php) >= 7.x.x
@@ -72,7 +72,7 @@ Several quick start options are available:
 
 ### Install dependencies
 
-From the command line on your host machine 
+From the command line on your host machine
 (not on your Vagrant development box), navigate to the theme directory then run:
 
 First install `composer` dependencies:
@@ -104,12 +104,12 @@ That's all.
 Edit [src/lib/setup.php](LICENSE.md) to enable or disable theme features,
 setup navigation menus and sidebars.
 
-Edit [src/lib/image-sizes.php](LICENSE.md) to setup post 
+Edit [src/lib/image-sizes.php](LICENSE.md) to setup post
 thumbnail sizes.
 
 Edit [src/lib/scripts.php](LICENSE.md) to setup scripts and styles.
 
-Actions and filters contains in classes into [src/lib/Hooked](LICENSE.md) 
+Actions and filters contains in classes into [src/lib/Hooked](LICENSE.md)
 directory. For new action and filter need to create new class.
 
 ## Commands
@@ -121,7 +121,7 @@ directory. For new action and filter need to create new class.
 - `npm run build` (alias `npm run build:prod`) - compile and optimize
   the files for production.
 
-- `npm run watch` - don’t want to manually recompile the files after every 
+- `npm run watch` - don’t want to manually recompile the files after every
   change.
 
 ### Linting
@@ -210,12 +210,12 @@ but most popular and great tools written on `javascript`.
 
 ### Why is it important to follow the code style
 
-This simplifies the interaction between team members, spends less time 
+This simplifies the interaction between team members, spends less time
 and simplifies maintenance the code.
 
 ### Why tests are important
 
-This not only guarantees that the written code works as expected, it allows 
+This not only guarantees that the written code works as expected, it allows
 to see different possibilities of its use.
 
 > Line that was wrapped.
