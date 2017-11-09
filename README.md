@@ -10,7 +10,9 @@ Itgalaxy’s remark sharable preset for linting markdown.
 
 ## Installation
 
-You'll first need to install [remark-cli](https://github.com/wooorm/remark/tree/master/packages/remark-cli) and [remark-lint](https://github.com/wooorm/remark-lint):
+You'll first need to install
+[remark-cli](https://github.com/wooorm/remark/tree/master/packages/remark-cli)
+and [remark-lint](https://github.com/wooorm/remark-lint):
 
 ```shell
 $ npm i remark-cli remark-lint --save-dev
@@ -24,15 +26,16 @@ $ npm install remark-preset-lint-itgalaxy --save-dev
 
 ## Usage
 
+**Configurations do not contain stylistic rules. We use
+[prettier](https://github.com/prettier/prettier) for this purpose.**
+
 Add preset to `package.json`:
 
 ```json
 {
-    "remarkConfig": {
-        "presets": [
-            "remark-preset-lint-itgalaxy"
-        ]
-    }
+  "remarkConfig": {
+    "presets": ["remark-preset-lint-itgalaxy"]
+  }
 }
 ```
 
