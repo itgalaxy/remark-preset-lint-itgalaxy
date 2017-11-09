@@ -6,9 +6,5 @@ module.exports = {
     "eslint --report-unused-disable-directives",
     "git add"
   ],
-  "*.{md,markdown,mdown,mkdn,mkd,mdwn,mkdown,ron}": [
-    "prettier --list-different",
-    "remark -f -q",
-    "git add"
-  ]
+  "*.md": ["prettier --list-different", "remark -f -q", "git add"]
 };
