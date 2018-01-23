@@ -38,20 +38,15 @@ Several quick start options are available:
 
 * Clone the repo: `git clone https://github.com/twbs/bootstrap.git`
 
-* Install with [npm](https://www.npmjs.com): `npm install
-  bootstrap@4.0.0-alpha.5`
+* Install with [npm](https://www.npmjs.com): `npm install bootstrap@4.0.0-alpha.5`
 
-* Install with [Meteor](https://www.meteor.com): `meteor add
-  twbs:bootstrap@=4.0.0-alpha.5`
+* Install with [Meteor](https://www.meteor.com): `meteor add twbs:bootstrap@=4.0.0-alpha.5`
 
-* Install with [Composer](https://getcomposer.org): `composer require
-  twbs/bootstrap`
+* Install with [Composer](https://getcomposer.org): `composer require twbs/bootstrap`
 
-* Install with [Bower](https://bower.io): `bower install
-  bootstrap#v4.0.0-alpha.5`
+* Install with [Bower](https://bower.io): `bower install bootstrap#v4.0.0-alpha.5`
 
-* Install with [NuGet](https://www.nuget.org): CSS: `Install-Package bootstrap
-  -Pre` Sass: `Install-Package bootstrap.sass -Pre` (`-Pre` is only required
+* Install with [NuGet](https://www.nuget.org): CSS: `Install-Package bootstrap -Pre` Sass: `Install-Package bootstrap.sass -Pre` (`-Pre` is only required
   until Bootstrap v4 has a stable release).
 
 Read the [Getting started page](https://getbootstrap.com/getting-started/) for
@@ -99,8 +94,7 @@ with [Jekyll](https://jekyllrb.com) and publicly hosted on GitHub Pages at
 
 1. Run through the
    [tooling setup](https://github.com/twbs/bootstrap/blob/v4-dev/docs/getting-started/build-tools.md#tooling-setup)
-   to install Jekyll (the site builder) and other Ruby dependencies with `bundle
-   install`.
+   to install Jekyll (the site builder) and other Ruby dependencies with `bundle install`.
 
 2. Run `grunt` (or a specific set of Grunt tasks) to rebuild distributed CSS and
    JavaScript files, as well as our docs assets.

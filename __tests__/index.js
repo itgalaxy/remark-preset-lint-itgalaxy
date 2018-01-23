@@ -1,4 +1,4 @@
-const config = require("../index");
+const config = require("..");
 const test = require("ava");
 const remark = require("remark");
 const globby = require("globby");
