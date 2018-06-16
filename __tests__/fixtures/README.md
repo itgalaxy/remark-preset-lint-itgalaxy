@@ -8,49 +8,49 @@ Insteria is a WordPress starter theme with a modern development workflow.
 
 ## Table of contents
 
-* [Features](#features)
-* [Requirements](#requirements)
-* [Browser Support](#browser-support)
-* [Theme installation](#theme-installation)
-* [Theme setup](#theme-setup)
-* [Testing](#testing)
-* [FAQ](#faq)
-* [Contribution](#contribution)
-* [Changelog](#changelog)
-* [Copyright and license](#copyright-and-license)
+- [Features](#features)
+- [Requirements](#requirements)
+- [Browser Support](#browser-support)
+- [Theme installation](#theme-installation)
+- [Theme setup](#theme-setup)
+- [Testing](#testing)
+- [FAQ](#faq)
+- [Contribution](#contribution)
+- [Changelog](#changelog)
+- [Copyright and license](#copyright-and-license)
 
 ## Features
 
-* [Sass](http://sass-lang.com/documentation/file.SASS_REFERENCE.html) for
+- [Sass](http://sass-lang.com/documentation/file.SASS_REFERENCE.html) for
   stylesheets. [Postcss-cssnext](https://github.com/MoOx/postcss-cssnext) and
   [css-modules](https://github.com/css-modules/css-modules) are also supported
   for pure css in stylesheets.
 
-* Latest ES syntax for JavaScript. Automatically determine the Babel plugins and
+- Latest ES syntax for JavaScript. Automatically determine the Babel plugins and
   polyfills you need based on your supported environments
   [babel-preset-env](https://github.com/babel/babel-preset-env).
 
-* [Webpack](https://webpack.github.io) for compiling assets, optimizing images,
+- [Webpack](https://webpack.github.io) for compiling assets, optimizing images,
   and concatenating and minifying files.
 
-* [Browsersync](http://www.browsersync.io) for synchronized browser testing.
+- [Browsersync](http://www.browsersync.io) for synchronized browser testing.
 
-* CSS [Bootstrap 3](http://getbootstrap.com) framework.
+- CSS [Bootstrap 3](http://getbootstrap.com) framework.
 
-* [Font Awesome](http://fontawesome.io).
+- [Font Awesome](http://fontawesome.io).
 
 ## Requirements
 
-* [WordPress](https://wordpress.org) >= 4.8.0 **(don't use older versions
+- [WordPress](https://wordpress.org) >= 4.8.0 **(don't use older versions
   `WordPress`, it's not stable and unsecurity)**
 
-* [PHP](http://php.net/manual/en/install.php) >= 7.x.x
+- [PHP](http://php.net/manual/en/install.php) >= 7.x.x
 
-* [Composer](https://getcomposer.org/download) >= 1.x.x
+- [Composer](https://getcomposer.org/download) >= 1.x.x
 
-* [Node.js](http://nodejs.org) >= 6.11.x
+- [Node.js](http://nodejs.org) >= 6.11.x
 
-* [npm](https://www.npmjs.com) >= 3.x.x
+- [npm](https://www.npmjs.com) >= 3.x.x
 
 ## Browser Support
 
@@ -66,8 +66,8 @@ npm run analysis:browserslist
 
 Several quick start options are available:
 
-* [Download the latest release](https://gitlab.itgalaxy.company/itgalaxy/insteria/repository/archive.zip?ref=master).
-* Clone the repo `git clone`
+- [Download the latest release](https://gitlab.itgalaxy.company/itgalaxy/insteria/repository/archive.zip?ref=master).
+- Clone the repo `git clone`
 
 ### Install dependencies
 
@@ -114,44 +114,44 @@ directory. For new action and filter need to create new class.
 
 ### Build and Watch
 
-* `npm run build:dev` - compile the files for development.
+- `npm run build:dev` - compile the files for development.
 
-* `npm run build` (alias `npm run build:prod`) - compile and optimize the files
+- `npm run build` (alias `npm run build:prod`) - compile and optimize the files
   for production.
 
-* `npm run watch` - don’t want to manually recompile the files after every
+- `npm run watch` - don’t want to manually recompile the files after every
   change.
 
 ### Linting
 
-* `npm run lint` - run linters against your files.
+- `npm run lint` - run linters against your files.
 
 Also your can run specific linters:
 
-* `npm run lint:eslint` - run linters against your files.
-* `npm run lint:stylelint` - run linters against your files.
-* `npm run lint:remark` - run linters against your files.
+- `npm run lint:eslint` - run linters against your files.
+- `npm run lint:stylelint` - run linters against your files.
+- `npm run lint:remark` - run linters against your files.
 
 See the [package.json](LICENSE.md) to determine all possible commands.
 
 ### Analysis
 
-* `npm run analysis:browserslist` - see that browsers supported.
-* `npm run analysis:cloc` - copy/paste detector for programming source code..
+- `npm run analysis:browserslist` - see that browsers supported.
+- `npm run analysis:cloc` - copy/paste detector for programming source code..
 
 See the [package.json](LICENSE.md) to determine all possible commands.
 
 ### Testing
 
-* `npm run test` - run tests, before tests starts linting.
-* `npm run test-only` - run only tests.
+- `npm run test` - run tests, before tests starts linting.
+- `npm run test-only` - run only tests.
 
 ## About tests
 
 We have two difference directories for tests:
 
-* `tests` (in root project directory) - stored `phpunit` tests.
-* `**/__tests__` (in each directory contain javascript) - stored `ava` tests.
+- `tests` (in root project directory) - stored `phpunit` tests.
+- `**/__tests__` (in each directory contain javascript) - stored `ava` tests.
 
 ### Ava
 
@@ -167,37 +167,37 @@ It takes a little preparation to run the tests.
 
 Optional.
 
-* Code Coverage Analysis.
+- Code Coverage Analysis.
 
   Before you can use the code coverage analysis features in PHPUnit, you should
   read the [Xdebug](https://xdebug.org) installation guide.
 
-1. Run `mysql` as `root`.
+1.  Run `mysql` as `root`.
 
-   ```shell
-   mysql -uroot # also your can run `sudo mysql`
-   ```
+    ```shell
+    mysql -uroot # also your can run `sudo mysql`
+    ```
 
-2. Create temporary testing user.
+2.  Create temporary testing user.
 
-   ```shell
-   CREATE USER 'user'@'localhost' IDENTIFIED BY 'password';
-   GRANT ALL ON db.* TO 'user'@'localhost';
-   ```
+    ```shell
+    CREATE USER 'user'@'localhost' IDENTIFIED BY 'password';
+    GRANT ALL ON db.* TO 'user'@'localhost';
+    ```
 
-3. Run `phpunit`.
+3.  Run `phpunit`.
 
-   ```shell
-   composer test
-   ```
+    ```shell
+    composer test
+    ```
 
-4. After running the tests, you can delete temporary testing user.
+4.  After running the tests, you can delete temporary testing user.
 
-   Run `mysql` as `root` (see above). And run:
+    Run `mysql` as `root` (see above). And run:
 
-   ```shell
-   DROP USER 'user'@'localhost';
-   ```
+    ```shell
+    DROP USER 'user'@'localhost';
+    ```
 
 ## FAQ
 
@@ -222,7 +222,7 @@ see different possibilities of its use.
 var foo = 1;
 ```
 
-999. bar
+999.  bar
 1000. foo
 
 Combined emphasis with **two asterisks and _one asterisks_**.

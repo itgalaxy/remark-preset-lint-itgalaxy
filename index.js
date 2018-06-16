@@ -1,11 +1,10 @@
 "use strict";
 
-/* eslint-disable global-require */
 module.exports = {
   plugins: [
+    /* eslint-disable global-require */
     require("remark-lint"),
     require("remark-comment-config"),
-    [require("remark-message-control"), { name: "lint" }],
     require("remark-validate-links"),
     [require("remark-lint-code-block-style"), "fenced"],
     require("remark-lint-fenced-code-flag"),
@@ -39,6 +38,7 @@ module.exports = {
     [require("remark-lint-ordered-list-marker-style"), "."],
     [require("remark-lint-ordered-list-marker-value"), "ordered"],
     require("remark-lint-no-url-trailing-slash")
+    /* eslint-enable global-require */
   ],
   settings: {
     bullet: "*",
@@ -62,4 +62,3 @@ module.exports = {
     strong: "*"
   }
 };
-/* eslint-enable global-require */
