@@ -81,7 +81,7 @@
     "npmpub": "^4.0.1",
     "npm-run-all": "^4.0.0",
     "remark": "^9.0.0",
-    "remark-cli": "^5.0.0",
+    "remark-cli": "^6.0.0",
     "husky": "^0.14.0",
     "lint-staged": "^7.0.0",
     "prettier": "^1.5.2"
