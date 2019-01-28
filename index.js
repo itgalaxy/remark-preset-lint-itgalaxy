@@ -20,7 +20,10 @@ module.exports = {
     require("remark-lint-no-empty-url"),
     require("remark-lint-no-file-name-articles"),
     require("remark-lint-no-file-name-consecutive-dashes"),
-    require("remark-lint-no-file-name-irregular-characters"),
+    [
+      require("remark-lint-no-file-name-irregular-characters"),
+      "\\\\.a-zA-Z0-9-_"
+    ],
     require("remark-lint-no-file-name-mixed-case"),
     require("remark-lint-no-file-name-outer-dashes"),
     require("remark-lint-no-heading-like-paragraph"),

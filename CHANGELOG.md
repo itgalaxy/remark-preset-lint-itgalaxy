@@ -4,6 +4,11 @@ All notable changes to this project will be documented in this file.
 
 This project adheres to [Semantic Versioning](http://semver.org).
 
+## 13.0.0 - 2019-01-28
+
+- Changed: allow using `_` in file names (`remark-lint-no-file-name-irregular-characters` rule).
+- Chore: update `remark-validate-links` package.
+
 ## 12.0.1 - 2018-06-16
 
 - Changed: drop `nodejs@4` support.
