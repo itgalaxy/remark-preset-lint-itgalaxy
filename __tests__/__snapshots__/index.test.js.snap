@@ -1,0 +1,140 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`remark-preset-lint-itgalaxy should match snapshots: fixtures/-readme.md 1`] = `
+Array [
+  [fixtures/-readme.md:1:1: Do not use initial or final dashes in a file name],
+]
+`;
+
+exports[`remark-preset-lint-itgalaxy should match snapshots: fixtures/BOOTSTRAP-README.md 1`] = `Array []`;
+
+exports[`remark-preset-lint-itgalaxy should match snapshots: fixtures/CHANGELOG.md 1`] = `Array []`;
+
+exports[`remark-preset-lint-itgalaxy should match snapshots: fixtures/ERROR.md 1`] = `
+Array [
+  [fixtures/ERROR.md:7:1-7:13: Code blocks should be fenced],
+  [fixtures/ERROR.md:11:1-13:4: Missing code-language flag],
+  [fixtures/ERROR.md:25:1-27:4: Missing code-language flag],
+  [fixtures/ERROR.md:290:1-290:28: Move definitions to the end of the file (after the node at line \`327\`)],
+  [fixtures/ERROR.md:284:1-284:28: Move definitions to the end of the file (after the node at line \`327\`)],
+  [fixtures/ERROR.md:278:1-278:27: Move definitions to the end of the file (after the node at line \`327\`)],
+  [fixtures/ERROR.md:276:1-276:27: Move definitions to the end of the file (after the node at line \`327\`)],
+  [fixtures/ERROR.md:264:1-264:26: Move definitions to the end of the file (after the node at line \`327\`)],
+  [fixtures/ERROR.md:258:1-258:26: Move definitions to the end of the file (after the node at line \`327\`)],
+  [fixtures/ERROR.md:250:1-250:30: Move definitions to the end of the file (after the node at line \`327\`)],
+  [fixtures/ERROR.md:244:1-244:30: Move definitions to the end of the file (after the node at line \`327\`)],
+  [fixtures/ERROR.md:203:1-203:29: Move definitions to the end of the file (after the node at line \`327\`)],
+  [fixtures/ERROR.md:197:1-197:29: Move definitions to the end of the file (after the node at line \`327\`)],
+  [fixtures/ERROR.md:69:1-69:11: Move definitions to the end of the file (after the node at line \`327\`)],
+  [fixtures/ERROR.md:68:1-68:11: Move definitions to the end of the file (after the node at line \`327\`)],
+  [fixtures/ERROR.md:64:1-64:11: Move definitions to the end of the file (after the node at line \`327\`)],
+  [fixtures/ERROR.md:63:1-63:11: Move definitions to the end of the file (after the node at line \`327\`)],
+  [fixtures/ERROR.md:43:1-43:47: Move definitions to the end of the file (after the node at line \`327\`)],
+  [fixtures/ERROR.md:35:1-35:47: Move definitions to the end of the file (after the node at line \`327\`)],
+  [fixtures/ERROR.md:51:1-51:10: Heading levels should increment by one level at a time],
+  [fixtures/ERROR.md:127:1-127:13: Heading levels should increment by one level at a time],
+  [fixtures/ERROR.md:320:1-320:14: All automatic links must start with a protocol],
+  [fixtures/ERROR.md:43:1-43:47: Do not use definitions with the same identifier (35:1)],
+  [fixtures/ERROR.md:64:1-64:11: Do not use definitions with the same identifier (63:1)],
+  [fixtures/ERROR.md:244:1-244:30: Do not use definitions with the same identifier (64:1)],
+  [fixtures/ERROR.md:250:1-250:30: Do not use definitions with the same identifier (244:1)],
+  [fixtures/ERROR.md:258:1-258:26: Do not use definitions with the same identifier (250:1)],
+  [fixtures/ERROR.md:264:1-264:26: Do not use definitions with the same identifier (258:1)],
+  [fixtures/ERROR.md:276:1-276:27: Do not use definitions with the same identifier (264:1)],
+  [fixtures/ERROR.md:278:1-278:27: Do not use definitions with the same identifier (276:1)],
+  [fixtures/ERROR.md:79:1-79:10: Do not use headings with similar content per section (77:1)],
+  [fixtures/ERROR.md:103:1-103:6: Don’t use emphasis to introduce a section, use a heading],
+  [fixtures/ERROR.md:107:1-107:8: Don’t use emphasis to introduce a section, use a heading],
+  [fixtures/ERROR.md:296:1-296:9: Don’t use links without URL],
+  [fixtures/ERROR.md:298:1-298:11: Don’t use images without URL],
+  [fixtures/ERROR.md:121:1-121:16: This looks like a heading but has too many hashes],
+  [fixtures/ERROR.md:135:1-135:11: Don’t add a trailing \`:\` to headings],
+  [fixtures/ERROR.md:141:1-141:11: Don’t add a trailing \`,\` to headings],
+  [fixtures/ERROR.md:143:1-143:11: Don’t add a trailing \`;\` to headings],
+  [fixtures/ERROR.md:163:1-163:15: Do not use HTML in markdown],
+  [fixtures/ERROR.md:175:8-175:17: Don’t pad \`emphasis\` with inner spaces],
+  [fixtures/ERROR.md:175:19-175:30: Don’t pad \`emphasis\` with inner spaces],
+  [fixtures/ERROR.md:175:32-175:63: Don’t pad \`link\` with inner spaces],
+  [fixtures/ERROR.md:185:1-185:19: Don’t use literal URLs without angle brackets],
+  [fixtures/ERROR.md:49:1-49:10: Don’t use multiple top level headings (1:1)],
+  [fixtures/ERROR.md:195:1-195:17: Did you mean to use \`[delta]\` instead of \`(delta)\`, a reference?],
+  [fixtures/ERROR.md:209:1-212:4: Do not use dollar signs before shell-commands],
+  [fixtures/ERROR.md:242:1-242:7: Use the trailing [] on reference images],
+  [fixtures/ERROR.md:256:1-256:6: Use the trailing [] on reference links],
+  [fixtures/ERROR.md:270:1-270:15: Found reference to undefined definition],
+  [fixtures/ERROR.md:43:1-43:47: Found unused definition],
+  [fixtures/ERROR.md:68:1-68:11: Found unused definition],
+  [fixtures/ERROR.md:69:1-69:11: Found unused definition],
+  [fixtures/ERROR.md:197:1-197:29: Found unused definition],
+  [fixtures/ERROR.md:203:1-203:29: Found unused definition],
+  [fixtures/ERROR.md:284:1-284:28: Found unused definition],
+  [fixtures/ERROR.md:310:1-310:35: Remove trailing slash (http://example.com)],
+  [fixtures/ERROR.md:63:1-63:11: Link to unknown file: \`bar\`],
+  [fixtures/ERROR.md:68:1-68:11: Link to unknown file: \`bar\`],
+  [fixtures/ERROR.md:64:1-64:11: Link to unknown file: \`qux\`],
+  [fixtures/ERROR.md:69:1-69:11: Link to unknown file: \`baz\`],
+  [fixtures/ERROR.md:195:1-195:17: Link to unknown file: \`delta\`],
+]
+`;
+
+exports[`remark-preset-lint-itgalaxy should match snapshots: fixtures/LICENSE.md 1`] = `Array []`;
+
+exports[`remark-preset-lint-itgalaxy should match snapshots: fixtures/MY_README_FILE.md 1`] = `Array []`;
+
+exports[`remark-preset-lint-itgalaxy should match snapshots: fixtures/README.md 1`] = `Array []`;
+
+exports[`remark-preset-lint-itgalaxy should match snapshots: fixtures/REMARK-MESSAGE-CONTROL.md 1`] = `Array []`;
+
+exports[`remark-preset-lint-itgalaxy should match snapshots: fixtures/Readme.md 1`] = `
+Array [
+  [fixtures/Readme.md:1:1: Do not mix casing in file names],
+]
+`;
+
+exports[`remark-preset-lint-itgalaxy should match snapshots: fixtures/definitions.md 1`] = `
+Array [
+  [fixtures/definitions.md:13:1-13:21: Link to unknown file: \`NOTFOUND.md\`],
+  [fixtures/definitions.md:14:1-14:23: Link to unknown file: \`NOTFOUND.md\`],
+  [fixtures/definitions.md:15:1-15:33: Link to unknown file: \`NOTFOUND.md\`],
+]
+`;
+
+exports[`remark-preset-lint-itgalaxy should match snapshots: fixtures/first-heading-level.md 1`] = `
+Array [
+  [fixtures/first-heading-level.md:1:1-1:9: First heading level should be \`1\`],
+]
+`;
+
+exports[`remark-preset-lint-itgalaxy should match snapshots: fixtures/invalid.md 1`] = `Array []`;
+
+exports[`remark-preset-lint-itgalaxy should match snapshots: fixtures/list.md 1`] = `Array []`;
+
+exports[`remark-preset-lint-itgalaxy should match snapshots: fixtures/multiple-toplevel-headings.md 1`] = `
+Array [
+  [fixtures/multiple-toplevel-headings.md:3:1-3:6: Don’t use multiple top level headings (1:1)],
+]
+`;
+
+exports[`remark-preset-lint-itgalaxy should match snapshots: fixtures/plug@ins.md 1`] = `
+Array [
+  [fixtures/plug@ins.md:1:1: Do not use \`@\` in a file name],
+]
+`;
+
+exports[`remark-preset-lint-itgalaxy should match snapshots: fixtures/plug--ins.md 1`] = `
+Array [
+  [fixtures/plug--ins.md:1:1: Do not use consecutive dashes in a file name],
+]
+`;
+
+exports[`remark-preset-lint-itgalaxy should match snapshots: fixtures/readme.markdown 1`] = `
+Array [
+  [fixtures/readme.markdown:1:1: Invalid extension: use \`md\`],
+]
+`;
+
+exports[`remark-preset-lint-itgalaxy should match snapshots: fixtures/the-title.md 1`] = `
+Array [
+  [fixtures/the-title.md:1:1: Do not start file names with \`the\`],
+]
+`;

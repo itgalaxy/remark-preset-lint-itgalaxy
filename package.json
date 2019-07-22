@@ -1,6 +1,6 @@
 {
   "name": "remark-preset-lint-itgalaxy",
-  "version": "14.0.0",
+  "version": "15.0.0",
   "description": "Itgalaxy org's remark lint rules",
   "keywords": [
     "remark",
@@ -25,135 +25,82 @@
     "index.js"
   ],
   "dependencies": {
-    "remark-comment-config": "^5.0.1",
-    "remark-lint": "^6.0.0",
-    "remark-lint-code-block-style": "^1.0.0",
-    "remark-lint-fenced-code-flag": "^1.0.0",
-    "remark-lint-file-extension": "^1.0.0",
-    "remark-lint-final-definition": "^1.0.0",
-    "remark-lint-first-heading-level": "^1.0.0",
-    "remark-lint-heading-increment": "^1.0.0",
-    "remark-lint-maximum-heading-length": "^1.0.0",
-    "remark-lint-no-blockquote-without-marker": "^2.0.0",
-    "remark-lint-no-duplicate-definitions": "^1.0.0",
-    "remark-lint-no-duplicate-headings-in-section": "^1.0.0",
-    "remark-lint-no-emphasis-as-heading": "^1.0.0",
-    "remark-lint-no-empty-url": "^1.0.0",
-    "remark-lint-no-file-name-articles": "^1.0.0",
-    "remark-lint-no-file-name-consecutive-dashes": "^1.0.0",
-    "remark-lint-no-file-name-irregular-characters": "^1.0.0",
-    "remark-lint-no-file-name-mixed-case": "^1.0.0",
-    "remark-lint-no-file-name-outer-dashes": "^1.0.0",
-    "remark-lint-no-heading-like-paragraph": "^1.0.0",
-    "remark-lint-no-heading-punctuation": "^1.0.0",
-    "remark-lint-no-html": "^1.0.0",
-    "remark-lint-no-inline-padding": "^1.0.0",
-    "remark-lint-no-literal-urls": "^1.0.0",
-    "remark-lint-no-multiple-toplevel-headings": "^1.0.0",
-    "remark-lint-no-reference-like-url": "^1.0.0",
-    "remark-lint-no-shell-dollars": "^1.0.0",
-    "remark-lint-no-shortcut-reference-image": "^1.0.0",
-    "remark-lint-no-shortcut-reference-link": "^1.0.0",
-    "remark-lint-no-undefined-references": "^1.0.0",
-    "remark-lint-no-unused-definitions": "^1.0.1",
-    "remark-lint-no-url-trailing-slash": "^3.0.0",
-    "remark-lint-ordered-list-marker-style": "^1.0.0",
-    "remark-lint-ordered-list-marker-value": "^1.0.0",
-    "remark-validate-links": "^8.0.0"
+    "remark-comment-config": "^5.1.0",
+    "remark-lint": "^6.0.5",
+    "remark-lint-code-block-style": "^1.0.3",
+    "remark-lint-fenced-code-flag": "^1.0.3",
+    "remark-lint-file-extension": "^1.0.3",
+    "remark-lint-final-definition": "^1.0.3",
+    "remark-lint-first-heading-level": "^1.1.4",
+    "remark-lint-heading-increment": "^1.0.3",
+    "remark-lint-no-auto-link-without-protocol": "^1.0.3",
+    "remark-lint-no-duplicate-definitions": "^1.0.5",
+    "remark-lint-no-duplicate-headings-in-section": "^1.0.4",
+    "remark-lint-no-emphasis-as-heading": "^1.0.3",
+    "remark-lint-no-empty-url": "^1.0.5",
+    "remark-lint-no-file-name-articles": "^1.0.3",
+    "remark-lint-no-file-name-consecutive-dashes": "^1.0.3",
+    "remark-lint-no-file-name-irregular-characters": "^1.0.3",
+    "remark-lint-no-file-name-mixed-case": "^1.0.3",
+    "remark-lint-no-file-name-outer-dashes": "^1.0.4",
+    "remark-lint-no-heading-like-paragraph": "^1.0.3",
+    "remark-lint-no-heading-punctuation": "^1.0.3",
+    "remark-lint-no-html": "^1.0.3",
+    "remark-lint-no-inline-padding": "^1.0.4",
+    "remark-lint-no-literal-urls": "^1.0.3",
+    "remark-lint-no-multiple-toplevel-headings": "^1.0.4",
+    "remark-lint-no-reference-like-url": "^1.0.4",
+    "remark-lint-no-shell-dollars": "^1.0.3",
+    "remark-lint-no-shortcut-reference-image": "^1.0.3",
+    "remark-lint-no-shortcut-reference-link": "^1.0.4",
+    "remark-lint-no-undefined-references": "^1.1.1",
+    "remark-lint-no-unused-definitions": "^1.0.5",
+    "remark-lint-no-url-trailing-slash": "^3.0.1",
+    "remark-lint-ordered-list-marker-value": "^1.0.3",
+    "remark-validate-links": "^9.0.0"
   },
   "devDependencies": {
-    "babel-eslint": "^10.0.1",
-    "eslint": "^5.12.1",
-    "eslint-plugin-ava": "^5.1.1",
-    "eslint-plugin-html": "^5.0.0",
-    "eslint-plugin-import": "^2.6.0",
-    "eslint-plugin-itgalaxy": "^97.0.1",
-    "eslint-plugin-jest": "^22.1.3",
-    "eslint-plugin-jsx-a11y": "^6.0.0",
+    "babel-eslint": "^10.0.2",
+    "eslint": "^6.1.0",
+    "eslint-plugin-ava": "^7.1.0",
+    "eslint-plugin-html": "^6.0.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-itgalaxy": "^103.0.0",
+    "eslint-plugin-jest": "^22.13.0",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
     "eslint-plugin-lodash": "^5.1.0",
     "eslint-plugin-markdown": "^1.0.0",
-    "eslint-plugin-node": "^8.0.1",
-    "eslint-plugin-promise": "^4.0.1",
-    "eslint-plugin-react": "^7.12.4",
-    "eslint-plugin-unicorn": "^7.1.0",
-    "globby": "^9.0.0",
-    "jest": "^24.0.0",
-    "npmpub": "^4.0.1",
-    "npm-run-all": "^4.0.0",
-    "remark": "^10.0.1",
-    "remark-cli": "^6.0.1",
-    "husky": "^1.3.1",
-    "lint-staged": "^8.1.0",
-    "prettier": "^1.5.2",
-    "vfile": "^4.0.0"
+    "eslint-plugin-node": "^9.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-react": "^7.14.2",
+    "eslint-plugin-unicorn": "^9.1.1",
+    "globby": "^10.0.1",
+    "jest": "^24.8.0",
+    "npm-run-all": "^4.1.5",
+    "remark": "^11.0.0",
+    "remark-cli": "^7.0.0",
+    "standard-version": "^6.0.1",
+    "husky": "^3.0.1",
+    "lint-staged": "^9.2.0",
+    "prettier": "^1.18.2",
+    "vfile": "^4.0.1"
   },
   "scripts": {
-    "lint:prettier": "prettier --list-different '__tests__/**/*.{js,mjs,jsx,md,yml,yaml}' '*.{js,mjs,jsx,md,yml,yaml}'",
-    "lint:md": "remark . -i .gitignore -f -q",
-    "lint:js": "eslint . --cache --report-unused-disable-directives --ignore-path .gitignore --ext '.js,.mjs,.jsx,.md' --ignore-pattern '**/fixtures/**'",
+    "lint:prettier": "prettier --list-different --ignore-path .gitignore '__tests__/**/*.{js,mjs,jsx,md,yml,yaml}' '*.{js,mjs,jsx,md,yml,yaml}' '!**/fixtures/**'",
+    "lint:js": "eslint --cache --report-unused-disable-directives --ext '.js,.mjs,.jsx,.md' --ignore-path .gitignore --ignore-pattern '**/fixtures/**' .",
+    "lint:md": "remark -f -q --ignore-path .gitignore --ignore-pattern '**/fixtures/**' .",
     "lint": "npm-run-all -l -p lint:**",
-    "prettify": "npm run lint:prettier -- --write",
+    "prettier": "npm run lint:prettier -- --write",
     "fix:js": "npm run lint:js -- --fix",
-    "fix": "npm-run-all -l prettify -p 'fix:**'",
+    "fix": "npm-run-all -l prettier -p 'fix:**'",
     "pretest": "npm run lint",
-    "test-only": "jest",
-    "test": "npm run test-only",
-    "release": "npmpub"
-  },
-  "remarkConfig": {
-    "plugins": [
-      "./index.js"
-    ]
-  },
-  "eslintConfig": {
-    "parserOptions": {
-      "sourceType": "script"
-    },
-    "rules": {
-      "sort-keys": "off"
-    },
-    "extends": [
-      "plugin:itgalaxy/esnext",
-      "plugin:itgalaxy/node",
-      "plugin:itgalaxy/jest",
-      "plugin:itgalaxy/markdown"
-    ],
-    "overrides": [
-      {
-        "files": [
-          "**/*.md"
-        ],
-        "parserOptions": {
-          "ecmaFeatures": {
-            "impliedStrict": true
-          }
-        },
-        "rules": {
-          "strict": "off",
-          "no-undef": "off",
-          "no-unused-vars": "off",
-          "no-process-env": "off",
-          "no-process-exit": "off",
-          "no-console": "off",
-          "import/no-unresolved": "off",
-          "node/no-unpublished-require": "off"
-        }
-      },
-      {
-        "files": [
-          "**/__tests__/**/*.js"
-        ],
-        "parserOptions": {
-          "sourceType": "module"
-        },
-        "rules": {
-          "node/no-unsupported-features": "off"
-        }
-      }
-    ],
-    "root": true
+    "test:only": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage",
+    "test": "npm run test:coverage",
+    "release": "standard-version"
   },
   "engines": {
-    "node": ">= 6.9.0"
+    "node": ">= 8.9.0"
   }
 }
