@@ -1,12 +1,45 @@
-const config = require("..");
-const remark = require("remark");
-const globby = require("globby");
+"use strict";
+
 const path = require("path");
 const fs = require("fs");
+const remark = require("remark");
+const globby = require("globby");
 const vfile = require("vfile");
+const config = require("..");
 
 function isObject(obj) {
   return typeof obj === "object" && obj !== null;
+}
+
+function readFile(filePath) {
+  return new Promise((resolve, reject) =>
+    fs.readFile(filePath, (error, data) => {
+      if (error) {
+        return reject(error);
+      }
+
+      return resolve(data);
+    })
+  );
+}
+
+function runRemark(filePath, data, localConfig) {
+  return new Promise((resolve, reject) => {
+    const file = vfile({
+      path: filePath,
+      contents: data.toString()
+    });
+
+    return remark()
+      .use(localConfig.plugins)
+      .process(file, (error, lintedFile) => {
+        if (error) {
+          return reject(error);
+        }
+
+        return resolve(lintedFile);
+      });
+  });
 }
 
 describe("remark-preset-lint-itgalaxy", () => {
@@ -18,51 +51,27 @@ describe("remark-preset-lint-itgalaxy", () => {
     expect(Object.keys(config.plugins)).not.toHaveLength(0);
   });
 
-  it("should have property `settings`", () => {
-    expect(isObject(config.settings)).toBe(true);
-  });
-
-  it("should have no error on valid syntax", () =>
-    globby(["fixtures/**/*.md"], {
+  it("should match snapshots", async () => {
+    const filePaths = await globby(["fixtures/**/*.{md,markdown}"], {
       absolute: true,
       cwd: path.dirname(__filename)
-    }).then(filePaths =>
-      Promise.all(
-        filePaths.map(filePath =>
-          new Promise((resolve, reject) =>
-            fs.readFile(filePath, (error, contents) => {
-              if (error) {
-                return reject(error);
-              }
+    });
 
-              return resolve(contents);
-            })
-          ).then(contents =>
-            new Promise((resolve, reject) => {
-              // Remove `remark-validate-links`, because it doesn't work not on CLI
-              config.plugins.splice(3, 1);
+    expect.assertions(filePaths.length);
 
-              const file = vfile({
-                path: filePath,
-                contents: contents.toString()
-              });
+    return Promise.all(
+      filePaths.map(async filePath => {
+        const data = await readFile(filePath);
+        const newVFile = await runRemark(filePath, data, config);
 
-              return remark()
-                .use(config.plugins)
-                .process(file, (error, lintedFile) => {
-                  if (error) {
-                    return reject(error);
-                  }
+        expect(
+          newVFile.messages.map(message => {
+            message.name = path.relative(__dirname, message.name);
 
-                  return resolve(lintedFile);
-                });
-            }).then(file => {
-              expect(file.messages).toHaveLength(0);
-
-              return true;
-            })
-          )
-        )
-      )
-    ));
+            return message;
+          })
+        ).toMatchSnapshot(path.relative(__dirname, filePath));
+      })
+    );
+  });
 });

@@ -4,6 +4,17 @@ All notable changes to this project will be documented in this file.
 
 This project adheres to [Semantic Versioning](http://semver.org).
 
+## 15.0.0 - 2019-07-22
+
+- Added: `remark-lint-no-auto-link-without-protocol` rule.
+- Changed: allow to use `!` and `?` in heading (only warn when a heading ends with `.,;:` characters).
+- Changed: remove `settings` from linting preset, no need this here.
+- Changed: remove `remark-lint-ordered-list-marker-style` in favor `prettier`.
+- Changed: remove `remark-lint-no-blockquote-without-marker` in favor `prettier`.
+- Changed: remove `remark-lint-maximum-heading-length` rule.
+- Changed: update `remark-validate-links`, some options was changed, please look [documentation](https://github.com/remarkjs/remark-validate-links).
+- Changed: minimum required Node.js version is `8.9.0`.
+
 ## 14.0.0 - 2019-01-28
 
 - Changed: allow using `_` in file names (`remark-lint-no-file-name-irregular-characters` rule).
