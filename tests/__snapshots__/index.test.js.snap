@@ -13,8 +13,8 @@ exports[`remark-preset-lint-itgalaxy should match snapshots: fixtures/CHANGELOG.
 exports[`remark-preset-lint-itgalaxy should match snapshots: fixtures/ERROR.md 1`] = `
 Array [
   [fixtures/ERROR.md:7:1-7:13: Code blocks should be fenced],
-  [fixtures/ERROR.md:11:1-13:4: Missing code-language flag],
-  [fixtures/ERROR.md:25:1-27:4: Missing code-language flag],
+  [fixtures/ERROR.md:11:1-13:4: Missing code language flag],
+  [fixtures/ERROR.md:25:1-27:4: Missing code language flag],
   [fixtures/ERROR.md:290:1-290:28: Move definitions to the end of the file (after the node at line \`327\`)],
   [fixtures/ERROR.md:284:1-284:28: Move definitions to the end of the file (after the node at line \`327\`)],
   [fixtures/ERROR.md:278:1-278:27: Move definitions to the end of the file (after the node at line \`327\`)],
@@ -43,8 +43,6 @@ Array [
   [fixtures/ERROR.md:276:1-276:27: Do not use definitions with the same identifier (264:1)],
   [fixtures/ERROR.md:278:1-278:27: Do not use definitions with the same identifier (276:1)],
   [fixtures/ERROR.md:79:1-79:10: Do not use headings with similar content per section (77:1)],
-  [fixtures/ERROR.md:103:1-103:6: Don’t use emphasis to introduce a section, use a heading],
-  [fixtures/ERROR.md:107:1-107:8: Don’t use emphasis to introduce a section, use a heading],
   [fixtures/ERROR.md:296:1-296:9: Don’t use links without URL],
   [fixtures/ERROR.md:298:1-298:11: Don’t use images without URL],
   [fixtures/ERROR.md:121:1-121:16: This looks like a heading but has too many hashes],
@@ -52,15 +50,12 @@ Array [
   [fixtures/ERROR.md:141:1-141:11: Don’t add a trailing \`,\` to headings],
   [fixtures/ERROR.md:143:1-143:11: Don’t add a trailing \`;\` to headings],
   [fixtures/ERROR.md:163:1-163:15: Do not use HTML in markdown],
-  [fixtures/ERROR.md:175:8-175:17: Don’t pad \`emphasis\` with inner spaces],
-  [fixtures/ERROR.md:175:19-175:30: Don’t pad \`emphasis\` with inner spaces],
   [fixtures/ERROR.md:175:32-175:63: Don’t pad \`link\` with inner spaces],
-  [fixtures/ERROR.md:185:1-185:19: Don’t use literal URLs without angle brackets],
   [fixtures/ERROR.md:49:1-49:10: Don’t use multiple top level headings (1:1)],
   [fixtures/ERROR.md:195:1-195:17: Did you mean to use \`[delta]\` instead of \`(delta)\`, a reference?],
-  [fixtures/ERROR.md:209:1-212:4: Do not use dollar signs before shell-commands],
+  [fixtures/ERROR.md:209:1-212:4: Do not use dollar signs before shell commands],
   [fixtures/ERROR.md:242:1-242:7: Use the trailing [] on reference images],
-  [fixtures/ERROR.md:256:1-256:6: Use the trailing [] on reference links],
+  [fixtures/ERROR.md:256:1-256:6: Use the trailing \`[]\` on reference links],
   [fixtures/ERROR.md:270:1-270:15: Found reference to undefined definition],
   [fixtures/ERROR.md:43:1-43:47: Found unused definition],
   [fixtures/ERROR.md:68:1-68:11: Found unused definition],
@@ -68,7 +63,6 @@ Array [
   [fixtures/ERROR.md:197:1-197:29: Found unused definition],
   [fixtures/ERROR.md:203:1-203:29: Found unused definition],
   [fixtures/ERROR.md:284:1-284:28: Found unused definition],
-  [fixtures/ERROR.md:310:1-310:35: Remove trailing slash (http://example.com)],
   [fixtures/ERROR.md:63:1-63:11: Link to unknown file: \`bar\`],
   [fixtures/ERROR.md:68:1-68:11: Link to unknown file: \`bar\`],
   [fixtures/ERROR.md:64:1-64:11: Link to unknown file: \`qux\`],
@@ -88,6 +82,12 @@ exports[`remark-preset-lint-itgalaxy should match snapshots: fixtures/REMARK-MES
 exports[`remark-preset-lint-itgalaxy should match snapshots: fixtures/Readme.md 1`] = `
 Array [
   [fixtures/Readme.md:1:1: Do not mix casing in file names],
+]
+`;
+
+exports[`remark-preset-lint-itgalaxy should match snapshots: fixtures/comments.md 1`] = `
+Array [
+  [fixtures/comments.md:4:1-4:14: Do not use HTML in markdown],
 ]
 `;
 
@@ -129,12 +129,8 @@ Array [
 
 exports[`remark-preset-lint-itgalaxy should match snapshots: fixtures/readme.markdown 1`] = `
 Array [
-  [fixtures/readme.markdown:1:1: Invalid extension: use \`md\`],
+  [fixtures/readme.markdown:1:1: Incorrect extension: use \`md\`],
 ]
 `;
 
-exports[`remark-preset-lint-itgalaxy should match snapshots: fixtures/the-title.md 1`] = `
-Array [
-  [fixtures/the-title.md:1:1: Do not start file names with \`the\`],
-]
-`;
+exports[`remark-preset-lint-itgalaxy should match snapshots: fixtures/the-title.md 1`] = `Array []`;

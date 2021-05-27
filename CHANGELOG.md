@@ -4,6 +4,10 @@ All notable changes to this project will be documented in this file.
 
 This project adheres to [Semantic Versioning](http://semver.org).
 
+## 16.0.0 - 2021-05-27
+
+- Changed: minimum required Node.js version is `12.13.0`.
+
 ## 15.0.0 - 2019-07-22
 
 - Added: `remark-lint-no-auto-link-without-protocol` rule.

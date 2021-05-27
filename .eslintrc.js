@@ -2,36 +2,36 @@
 
 module.exports = {
   parserOptions: {
-    sourceType: "script"
+    sourceType: "script",
   },
   extends: ["plugin:itgalaxy/esnext", "plugin:itgalaxy/node"],
   // Need investigate problem in eslint-plugin-node
   rules: {
-    "node/no-unpublished-require": "off"
+    "node/no-unpublished-require": "off",
   },
   overrides: [
     // Source
     {
       // Exclude nested tests
-      excludedFiles: ["**/__tests__/**/*", "**/__mocks__/**/*", "**/*.md"],
+      excludedFiles: ["**/tests/**/*", "**/__mocks__/**/*", "**/*.md"],
       files: ["src/**/*"],
       rules: {
         // Allow to use ECMAScript 6 modules because we use `babel`
-        "node/no-unsupported-features/es-syntax": "off"
-      }
+        "node/no-unsupported-features/es-syntax": "off",
+      },
     },
 
     // Jest
     {
       extends: ["plugin:itgalaxy/jest"],
       excludedFiles: ["**/*.md"],
-      files: ["**/__tests__/**/*", "**/__mocks__/**/*"],
+      files: ["**/tests/**/*", "**/__mocks__/**/*"],
       rules: {
         // Allow to use `console` (example - `mocking`)
         "no-console": "off",
         // Allow to use ECMAScript 6 modules because we use `babel`
-        "node/no-unsupported-features/es-syntax": "off"
-      }
+        "node/no-unsupported-features/es-syntax": "off",
+      },
     },
 
     // Markdown
@@ -41,8 +41,8 @@ module.exports = {
       parserOptions: {
         sourceType: "module",
         ecmaFeatures: {
-          impliedStrict: true
-        }
+          impliedStrict: true,
+        },
       },
       rules: {
         strict: "off",
@@ -55,9 +55,9 @@ module.exports = {
         "import/extensions": "off",
         "node/no-unpublished-require": "off",
         "node/no-unpublished-import": "off",
-        "node/no-unsupported-features/es-syntax": "off"
-      }
-    }
+        "node/no-unsupported-features/es-syntax": "off",
+      },
+    },
   ],
-  root: true
+  root: true,
 };
