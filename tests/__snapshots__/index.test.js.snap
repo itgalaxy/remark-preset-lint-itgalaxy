@@ -79,12 +79,6 @@ exports[`remark-preset-lint-itgalaxy should match snapshots: fixtures/README.md 
 
 exports[`remark-preset-lint-itgalaxy should match snapshots: fixtures/REMARK-MESSAGE-CONTROL.md 1`] = `Array []`;
 
-exports[`remark-preset-lint-itgalaxy should match snapshots: fixtures/Readme.md 1`] = `
-Array [
-  [fixtures/Readme.md:1:1: Do not mix casing in file names],
-]
-`;
-
 exports[`remark-preset-lint-itgalaxy should match snapshots: fixtures/comments.md 1`] = `
 Array [
   [fixtures/comments.md:4:1-4:14: Do not use HTML in markdown],
