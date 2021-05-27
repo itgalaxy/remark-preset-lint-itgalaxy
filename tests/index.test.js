@@ -70,7 +70,9 @@ describe("remark-preset-lint-itgalaxy", () => {
 
             return message;
           })
-        ).toMatchSnapshot(path.relative(__dirname, filePath));
+        ).toMatchSnapshot(
+          path.relative(__dirname, filePath).replace(/\\/g, "/")
+        );
       })
     );
   });
