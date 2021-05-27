@@ -12,25 +12,25 @@ function isObject(obj) {
 }
 
 function readFile(filePath) {
-  return new Promise((resolve, reject) =>
+  return new Promise((resolve, reject) => {
     fs.readFile(filePath, (error, data) => {
       if (error) {
         return reject(error);
       }
 
       return resolve(data);
-    })
-  );
+    });
+  });
 }
 
 function runRemark(filePath, data, localConfig) {
   return new Promise((resolve, reject) => {
     const file = vfile({
       path: filePath,
-      contents: data.toString()
+      contents: data.toString(),
     });
 
-    return remark()
+    remark()
       .use(localConfig.plugins)
       .process(file, (error, lintedFile) => {
         if (error) {
@@ -54,23 +54,27 @@ describe("remark-preset-lint-itgalaxy", () => {
   it("should match snapshots", async () => {
     const filePaths = await globby(["fixtures/**/*.{md,markdown}"], {
       absolute: true,
-      cwd: path.dirname(__filename)
+      cwd: path.dirname(__filename),
     });
 
     expect.assertions(filePaths.length);
 
     return Promise.all(
-      filePaths.map(async filePath => {
+      filePaths.map(async (filePath) => {
         const data = await readFile(filePath);
         const newVFile = await runRemark(filePath, data, config);
 
         expect(
-          newVFile.messages.map(message => {
-            message.name = path.relative(__dirname, message.name);
+          newVFile.messages.map((message) => {
+            message.name = path
+              .relative(__dirname, message.name)
+              .replace(/\\/g, "/");
 
             return message;
           })
-        ).toMatchSnapshot(path.relative(__dirname, filePath));
+        ).toMatchSnapshot(
+          path.relative(__dirname, filePath).replace(/\\/g, "/")
+        );
       })
     );
   });
