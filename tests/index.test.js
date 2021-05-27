@@ -66,7 +66,9 @@ describe("remark-preset-lint-itgalaxy", () => {
 
         expect(
           newVFile.messages.map((message) => {
-            message.name = path.relative(__dirname, message.name);
+            message.name = path
+              .relative(__dirname, message.name)
+              .replace(/\\/g, "/");
 
             return message;
           })
